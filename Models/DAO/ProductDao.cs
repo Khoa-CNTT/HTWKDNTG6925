@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 using Models.EF;
 namespace Models.DAO
 {
-   
+
     public class ProductDao
     {
-        
-         DBNoiThat db  = new DBNoiThat();
-       
+
+        DBNoiThat db = new DBNoiThat();
+
         public List<Product> ListSanPham()
         {
             return db.Products.ToList();
         }
         public List<Product> CateKorea()
         {
-            return db.Products.Where(n => n.Discount == 0 || n.EndDate < DateTime.Now || n.StartDate > DateTime.Now).Where(n => n.CateId== 9).Take(4).ToList();
+            return db.Products.Where(n => n.Discount == 0 || n.EndDate < DateTime.Now || n.StartDate > DateTime.Now).Where(n => n.CateId == 9).Take(4).ToList();
         }
         public List<Product> CateHavana()
         {
@@ -28,40 +28,41 @@ namespace Models.DAO
         {
             var model = (from a in db.Products
                          join b in db.OrderDetails on a.ProductId equals b.ProductId
-                         group b by new { a.Description,a.ProductId,a.Photo,a.Price,a.Discount,a.EndDate,a.StartDate } 
+                         group b by new { a.Description, a.ProductId, a.Photo, a.Price, a.Discount, a.EndDate, a.StartDate }
                          into g
                          select new ProductView
                          {
-                            Description= g.Key.Description,
-                            ProductId=g.Key.ProductId,
-                            Price=g.Key.Price,
-                            Discount=g.Key.Discount,
-                            StartDate=g.Key.StartDate,
-                            EndDate=g.Key.EndDate,
-                            Photo=g.Key.Photo,
-                          
-                            Quantity = g.Sum(s => s.Quantity),
+                             Description = g.Key.Description,
+                             ProductId = g.Key.ProductId,
+                             Price = g.Key.Price,
+                             Discount = g.Key.Discount,
+                             StartDate = g.Key.StartDate,
+                             EndDate = g.Key.EndDate,
+                             Photo = g.Key.Photo,
+
+                             Quantity = g.Sum(s => s.Quantity),
 
                          }).OrderByDescending(n => n.Quantity).Take(6).ToList();
-           return model;
-        }
-
-        public List<Product> SaleProduct() { 
-            var model = db.Products.Where(n => n.Discount > 0 ).OrderByDescending(n => n.Discount).Take(8).ToList();
             return model;
         }
-        
+
+        public List<Product> SaleProduct()
+        {
+            var model = db.Products.Where(n => n.Discount > 0).OrderByDescending(n => n.Discount).Take(8).ToList();
+            return model;
+        }
+
         public List<Product> NewProduct()
         {
-            return db.Products.Where(n => n.Discount == 0 || n.EndDate < DateTime.Now|| n.StartDate > DateTime.Now).OrderByDescending(n=>n.StartDate).Take(8).ToList();
+            return db.Products.Where(n => n.Discount == 0 || n.EndDate < DateTime.Now || n.StartDate > DateTime.Now).OrderByDescending(n => n.StartDate).Take(8).ToList();
         }
         public Product DetailsProduct(int Id)
         {
-           return db.Products.SingleOrDefault(n => n.ProductId == Id);
+            return db.Products.SingleOrDefault(n => n.ProductId == Id);
         }
-        
+
         //in ra loai san pham
-       
+
         public List<Product> ListByCategoryId(int cateId, ref int total, int pageindex = 1, int pagesize = 12)
         {
             total = db.Products.Where(x => x.CateId == cateId).Count();
@@ -70,7 +71,7 @@ namespace Models.DAO
         }
         public List<string> ListName(string keyword)
         {
-        
+
             return db.Products.Where(n => n.Name.Contains(keyword)).Select(n => n.Name).Distinct().ToList();
         }
         public List<Product> Search(string keyword, ref int total, int pageindex = 1, int pagesize = 12)
@@ -103,5 +104,5 @@ namespace Models.DAO
 
 
     }
-    
+
 }
