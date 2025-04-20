@@ -77,3 +77,8 @@ D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
