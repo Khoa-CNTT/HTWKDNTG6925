@@ -136,6 +136,17 @@
   <ItemGroup>
     <Content Include="assets\admin\data\flot-data.js" />
     <Content Include="assets\admin\data\morris-data.js" />
+    <Content Include="Content\admin\css\sb-admin-2.css" />
+    <Content Include="Content\admin\css\sb-admin-2.min.css" />
+    <Content Include="Content\admin\img\a.jpg" />
+    <Content Include="Content\admin\img\our-furniture-your-home_v2.jpg" />
+    <Content Include="Content\admin\img\undraw_posting_photo.svg" />
+    <Content Include="Content\admin\js\demo\chart-area-demo.js" />
+    <Content Include="Content\admin\js\demo\chart-bar-demo.js" />
+    <Content Include="Content\admin\js\demo\chart-pie-demo.js" />
+    <Content Include="Content\admin\js\demo\datatables-demo.js" />
+    <Content Include="Content\admin\js\sb-admin-2.js" />
+    <Content Include="Content\admin\js\sb-admin-2.min.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -187,6 +198,31 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Content\admin\scss\sb-admin-2.scss" />
+    <Content Include="Content\admin\scss\_buttons.scss" />
+    <Content Include="Content\admin\scss\_cards.scss" />
+    <Content Include="Content\admin\scss\_charts.scss" />
+    <Content Include="Content\admin\scss\_dropdowns.scss" />
+    <Content Include="Content\admin\scss\_error.scss" />
+    <Content Include="Content\admin\scss\_footer.scss" />
+    <Content Include="Content\admin\scss\_global.scss" />
+    <Content Include="Content\admin\scss\_login.scss" />
+    <Content Include="Content\admin\scss\_mixins.scss" />
+    <Content Include="Content\admin\scss\_navs.scss" />
+    <Content Include="Content\admin\scss\_utilities.scss" />
+    <Content Include="Content\admin\scss\_variables.scss" />
+    <Content Include="Content\admin\scss\navs\_global.scss" />
+    <Content Include="Content\admin\scss\navs\_sidebar.scss" />
+    <Content Include="Content\admin\scss\navs\_topbar.scss" />
+    <Content Include="Content\admin\scss\utilities\_animation.scss" />
+    <Content Include="Content\admin\scss\utilities\_background.scss" />
+    <Content Include="Content\admin\scss\utilities\_border.scss" />
+    <Content Include="Content\admin\scss\utilities\_display.scss" />
+    <Content Include="Content\admin\scss\utilities\_progress.scss" />
+    <Content Include="Content\admin\scss\utilities\_rotate.scss" />
+    <Content Include="Content\admin\scss\utilities\_text.scss" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\cartcontroller.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -228,7 +264,6 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\View\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
