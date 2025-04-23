@@ -9,13 +9,13 @@ namespace WebsiteNoiThat.Models
 {
     public class LoginModel
     {
-        [Required(ErrorMessage = "Vui lòng nhập tên đăng nhập")]
+       
+        [DisplayName("Tên đăng nhập")]
+        [Required(ErrorMessage = "Bạn phải nhập tài khoản!")]
         public string UserName { get; set; }
 
-        [Required(ErrorMessage = "Vui lòng nhập mật khẩu")]
-        [DataType(DataType.Password)]
+        [DisplayName("Mật khẩu")]
+        [Required(ErrorMessage = "Bạn phải nhập mật khẩu!")]
         public string Password { get; set; }
-
-        public bool RememberMe { get; set; }
     }
 }
