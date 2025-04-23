@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
@@ -137,6 +138,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Scripts\categorycontroller.js" />
+    <Content Include="Areas\Scripts\mustache.min.js" />
+    <Content Include="Areas\Scripts\newstintuccontroller.js" />
     <Content Include="assets\admin\data\flot-data.js" />
     <Content Include="assets\admin\data\morris-data.js" />
     <Content Include="assets\admin\dist\css\sb-admin-2.css" />
@@ -2191,6 +2195,19 @@
     <Content Include="assets\admin\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="assets\admin\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="assets\admin\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Areas\Admin\Views\ProductCate\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductCate\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductCate\Show.cshtml" />
+    <Content Include="Areas\Admin\Views\Provider\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Provider\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Provider\Show.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Show.cshtml" />
+    <Content Include="Areas\Admin\Views\User\UserProfile.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\UserGroups\Index.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\cartcontroller.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -2237,6 +2254,11 @@
     <Content Include="Views\Product\NewProduct.cshtml" />
     <Content Include="Views\Product\ProductHot.cshtml" />
     <Content Include="Views\Product\ShowProduct.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
