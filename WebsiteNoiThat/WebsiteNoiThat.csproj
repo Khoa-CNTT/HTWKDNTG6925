@@ -133,9 +133,13 @@
     </Compile>
     <Compile Include="Models\CardModel.cs" />
     <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Models\HistoryCart.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\OrderViewModel.cs" />
     <Compile Include="Models\ProductViewModel.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\UserModelView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -2216,6 +2220,7 @@
     <Content Include="Areas\Admin\Views\Customer\Add.cshtml" />
     <Content Include="Areas\Admin\Views\Customer\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Customer\Show.cshtml" />
+    <Content Include="Areas\Admin\Views\Contact\Index.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\cartcontroller.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -2271,6 +2276,8 @@
     <Content Include="Views\Cart\HistoryCart.cshtml" />
     <Content Include="Views\Cart\Success.cshtml" />
     <Content Include="Views\Cart\tai_khoan_bi_khoa.cshtml" />
+    <Content Include="Views\CategoryProduct\Menu.cshtml" />
+    <Content Include="Views\Contact\Contacts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />

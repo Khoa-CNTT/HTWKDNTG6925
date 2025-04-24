@@ -1,0 +1,156 @@
+﻿@model IEnumerable<WebsiteNoiThat.Models.OrderViewModel>
+
+@{
+    ViewBag.Title = "Show";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thống kê - báo cáo</h2>
+
+<title>Thống kê báo cáo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
+
+<style>
+    .Search {
+        background-color: #f9f9f9; /* Thêm các kiểu tùy chỉnh cho lớp Search nếu cần */
+        font-weight: bold;
+    }
+</style>
+
+@using (Html.BeginForm("Viewmodel", "Order", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-check-inline">
+        Từ
+        <input type="text" class="form-control col-md-4" style="margin-left: 10px; margin-right: 10px;"
+               id="dfr" name="dfr" placeholder="yyyy-MM-dd"
+               oninput="validateDateInput('dfr')" required>
+        <small id="dfrError" class="text-danger" style="display: none;">Vui lòng nhập ngày theo định dạng yyyy-MM-dd</small>
+
+        Đến
+        <input type="text" class="form-control col-md-4" style="margin-left: 10px; margin-right: 10px;"
+               id="dto" name="dto" placeholder="yyyy-MM-dd"
+               oninput="validateDateInput('dto')" required>
+        <small id="dtoError" class="text-danger" style="display: none;">Vui lòng nhập ngày theo định dạng yyyy-MM-dd</small>
+
+        <input type="submit" value="Xem" class="btn btn-primary" onclick="return validateDateRange()" disabled />
+    </div>
+    <hr>
+
+    <!-- Phần còn lại của bảng dữ liệu -->
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="example" class="table table-striped table-bordered table-hover" style="width:100%">
+                    <thead>
+                        <tr class="Search">
+                            <th>Mã hóa đơn</th>
+                            <th>Tên KH</th>
+                            <th>(%)Khuyến mãi</th>
+                            <th>Địa chỉ</th>
+                            <th>SĐT</th>
+                            <th>Trạng thái</th>
+                            <th>Ngày cập nhật</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="Search">
+                                <td> @item.OrderId</td>
+                                <td>@item.ShipName</td>
+                                <td>@item.Discount</td>
+                                <td>@item.ShipAddress</td>
+                                <td>@item.ShipPhone</td>
+                                <td>@item.StatusName</td>
+                                <td>@item.UpdateDate</td>
+                                <td width="60px">
+                                    <input type="button" class="btn btn-sm btn-primary" value="Xem" onclick="location.href='/Admin/Order/Details/@item.OrderId'" />
+                                    <input type="button" class="btn btn-sm btn-warning" value="In" onclick="location.href='/Admin/Order/PrintSalarySlip/@item.OrderId'" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="7" style="text-align:right">Tổng tiền:</th>
+                            <th> @ViewBag.total.ToString("N0")₫</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- JavaScript xử lý kiểm tra đầu vào và khởi tạo DataTables -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            responsive: true,
+            language: {
+                search: "Tìm kiếm:",
+                lengthMenu: "Hiển thị _MENU_ mục",
+                info: "Hiển thị _START_ đến _END_ của _TOTAL_ mục",
+                paginate: {
+                    previous: "Trước",
+                    next: "Tiếp"
+                }
+            }
+        });
+    });
+
+    // Hàm kiểm tra định dạng ngày
+    function validateDateInput(inputId) {
+        const input = document.getElementById(inputId);
+        const errorMessage = document.getElementById(inputId + 'Error');
+        const datePattern = /^\d{4}-\d{2}-\d{2}$/; // Định dạng yyyy-MM-dd
+
+        if (!datePattern.test(input.value)) {
+            errorMessage.style.display = "block";
+            input.setAttribute("data-valid", "false");
+        } else {
+            errorMessage.style.display = "none";
+            input.setAttribute("data-valid", "true");
+        }
+
+        toggleSubmitButton();
+    }
+
+    // Hàm kiểm tra khoảng thời gian hợp lệ
+    function validateDateRange() {
+        const dfr = document.getElementById('dfr').value;
+        const dto = document.getElementById('dto').value;
+
+        const dfrDate = new Date(dfr);
+        const dtoDate = new Date(dto);
+
+        if (dfr && dto && dfrDate > dtoDate) {
+            alert("Ngày bắt đầu phải nhỏ hơn hoặc bằng ngày kết thúc.");
+            return false;
+        }
+
+        return true;
+    }
+
+    // Hàm bật/tắt nút "Xem"
+    function toggleSubmitButton() {
+        const dfrValid = document.getElementById("dfr").getAttribute("data-valid") === "true";
+        const dtoValid = document.getElementById("dto").getAttribute("data-valid") === "true";
+        const submitButton = document.querySelector('input[type="submit"]');
+
+        submitButton.disabled = !(dfrValid && dtoValid);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        toggleSubmitButton();
+    });
+</script>
