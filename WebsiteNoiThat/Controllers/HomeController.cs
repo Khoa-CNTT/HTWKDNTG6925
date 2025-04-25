@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebsiteNoiThat.Common;
+using WebsiteNoiThat.Models;
 
 namespace WebsiteNoiThat.Controllers
 {
@@ -12,19 +14,18 @@ namespace WebsiteNoiThat.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        [ChildActionOnly]
+        public PartialViewResult HeaderCart()
         {
-            ViewBag.Message = "Your application description page.";
+            var cart = Session[Commoncontent.CartSession];
+            var list = new List<CartItem>();
+            if (cart != null)
+            {
+                list = (List<CartItem>)cart;
+            }
 
-            return View();
+            return PartialView(list);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

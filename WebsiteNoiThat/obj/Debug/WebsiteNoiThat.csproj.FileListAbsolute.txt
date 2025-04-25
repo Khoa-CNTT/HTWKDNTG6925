@@ -1,3 +1,1000 @@
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csprojAssemblyReference.cache
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CopyComplete
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+C:\Users\nguyen ngoc\source\repos\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csprojAssemblyReference.cache
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CopyComplete
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+C:\Users\Admin\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csprojAssemblyReference.cache
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CopyComplete
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+C:\Users\LENOVO\Downloads\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csprojAssemblyReference.cache
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CopyComplete
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\Công nghệ WEB\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csprojAssemblyReference.cache
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CopyComplete
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+J:\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csprojAssemblyReference.cache
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CopyComplete
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csprojAssemblyReference.cache
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CopyComplete
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\CODE CŨ\CNWebNC\NguyenThiNgoc_HTTT2\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.AssemblyReference.cache
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\KIEM THU\Nhom2\website-ban-noi-that-main\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.AssemblyReference.cache
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.AssemblyReference.cache
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\KIEM THU\Nhom2\WEBNOITHAT1.0\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.AssemblyReference.cache
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+E:\filesua\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.AssemblyReference.cache
+D:\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+D:\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
+D:\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.exe.config
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csc.rsp
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.exe
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\csi.rsp
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.AppContext.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Collections.Immutable.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\System.Reflection.Metadata.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.exe.config
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Razor.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployment.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.AssemblyReference.cache
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
+D:\BanHang\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll.config
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\WebsiteNoiThat.pdb
@@ -51,9 +1048,21 @@ D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\vbc.rsp
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\roslyn\VBCSCompiler.exe.config
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\BotDetect.Web.Mvc.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.Web.Infrastructure.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\reCAPTCHA.MVC.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Rotativa.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.dll
@@ -62,6 +1071,14 @@ D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployme
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\WebGrease.dll
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.SqlServer.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\PagedList.Mvc.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Data.SQLite.dll.config
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Helpers.xml
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Mvc.xml
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.Optimization.xml
@@ -71,14 +1088,11 @@ D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Deployme
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Web.WebPages.Razor.xml
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Newtonsoft.Json.xml
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Antlr3.Runtime.pdb
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\System.Diagnostics.DiagnosticSource.xml
+D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.AssemblyReference.cache
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.csproj.CoreCompileInputs.cache
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteN.7BB65CC8.Up2Date
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\obj\Debug\WebsiteNoiThat.pdb
-D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll
-D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.dll
-D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.pdb
-D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\Models.dll.config
-D:\WebsiteNoiThat\WebsiteNoiThat\WebsiteNoiThat\bin\EntityFramework.xml

@@ -1,0 +1,15 @@
+D:\BanHang\WebsiteNoiThat\Models\bin\Release\Models.dll.config
+D:\BanHang\WebsiteNoiThat\Models\bin\Release\Models.dll
+D:\BanHang\WebsiteNoiThat\Models\bin\Release\Models.pdb
+D:\BanHang\WebsiteNoiThat\Models\bin\Release\EntityFramework.dll
+D:\BanHang\WebsiteNoiThat\Models\bin\Release\EntityFramework.SqlServer.dll
+D:\BanHang\WebsiteNoiThat\Models\bin\Release\EntityFramework.xml
+D:\BanHang\WebsiteNoiThat\Models\bin\Release\EntityFramework.SqlServer.xml
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Models.csproj.AssemblyReference.cache
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Interop.SCRIPTOSYSLib.dll
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Interop.ScriptSigner.dll
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Models.csproj.ResolveComReference.cache
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Models.csproj.CoreCompileInputs.cache
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Models.csproj.Up2Date
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Models.dll
+D:\BanHang\WebsiteNoiThat\Models\obj\Release\Models.pdb
