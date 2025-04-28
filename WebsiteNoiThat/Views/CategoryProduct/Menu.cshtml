@@ -1,31 +1,50 @@
 ﻿@model List<Models.EF.Category>
-@*<ul class="mnboxl">
-    @foreach (var item in Model.Where(n => n.ParId==0))
-    {
-        var child = Model.Where(n => n.ParId == item.CategoryId);
-        var childparent = child.Count() > 0;
-        <li>
-            <a href="/san-pham/@item.CategoryId"@childparent>@item.Name</a>
-            @if (child.Count() > 0)
-            {
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <ul class="mnboxl_1">
-                    @foreach (var children in child)
-                    {
-                        <li><a href="/san-pham/@children.CategoryId">@children.Name</a></li>
-                    }
-                </ul>
-            }
-        </li>
-    }
-</ul>*@
 
 <div class="dropdown-menu" aria-labelledby="dropdown_category">
-    @foreach (var item in Model.Where(n => n.ParId == 0))
+    @foreach (var parentItem in Model.Where(n => n.ParId == 0))
     {
-        var child = Model.Where(n => n.ParId == item.CategoryId);
-        var childparent = child.Count() > 0;
-        <a class="dropdown-item" href="/danh-muc/@item.CategoryId" @childparent style="font-weight:normal">@item.Name</a>
-    }
+        var children = Model.Where(n => n.ParId == parentItem.CategoryId).ToList();
 
+        <div class="dropdown-submenu">
+            <a class="dropdown-item @(children.Any() ? "has-children" : "")"
+               href="@(!children.Any() ? "/danh-muc/" + parentItem.CategoryId : "#")"
+               @(children.Any() ? "data-toggle=\"dropdown\"" : "")
+               style="font-weight:normal;">
+                @parentItem.Name
+            </a>
+
+            @if (children.Any())
+            {
+                <div class="dropdown-menu">
+                    @foreach (var childItem in children)
+                    {
+                        var grandChildren = Model.Where(n => n.ParId == childItem.CategoryId).ToList();
+
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item @(grandChildren.Any() ? "has-children" : "")"
+                               href="@(!grandChildren.Any() ? "/danh-muc/" + childItem.CategoryId : "#")"
+                               @(grandChildren.Any() ? "data-toggle=\"dropdown\"" : "")
+                               style="font-weight:normal; margin-left: 10px;">
+                                @childItem.Name
+                            </a>
+
+                            @if (grandChildren.Any())
+                            {
+                                <div class="dropdown-menu">
+                                    @foreach (var grandChildItem in grandChildren)
+                                    {
+                                        <a class="dropdown-item"
+                                           href="/danh-muc/@grandChildItem.CategoryId"
+                                           style="font-weight:normal; margin-left: 20px;">
+                                            @grandChildItem.Name
+                                        </a>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    }
 </div>

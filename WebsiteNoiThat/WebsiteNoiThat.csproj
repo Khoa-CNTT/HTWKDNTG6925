@@ -2455,6 +2455,7 @@
     <Content Include="Content\css\owl.carousel.css" />
     <Content Include="Content\css\owl.carousel.js" />
     <Content Include="Content\css\owl.theme.css" />
+    <Content Include="Content\css\site.css" />
     <Content Include="Content\css\Slider.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\DataTable\css\dataTables.bootstrap.css" />
