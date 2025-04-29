@@ -58,12 +58,31 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             ViewBag.ListCate = new SelectList(db.Categories.ToList(), "CategoryId", "Name");
             ViewBag.ListProvider = new SelectList(db.Providers.ToList(), "ProviderId", "Name");
 
+            // Kiểm tra logic ngày khuyến mãi
+            if (n.Discount > 0)
+            {
+                if (!n.StartDate.HasValue || !n.EndDate.HasValue)
+                {
+                    ModelState.AddModelError("", "Vui lòng nhập đầy đủ ngày bắt đầu và kết thúc khi có khuyến mãi.");
+                }
+                else if (n.StartDate > n.EndDate)
+                {
+                    ModelState.AddModelError("", "Ngày bắt đầu khuyến mãi phải nhỏ hơn ngày kết thúc.");
+                }
+            }
+            else
+            {
+                if (n.StartDate.HasValue || n.EndDate.HasValue)
+                {
+                    ModelState.AddModelError("", "Không được nhập ngày nếu không có khuyến mãi.");
+                }
+            }
+
             if (ModelState.IsValid)
             {
                 string fileName = null;
                 if (UploadImage != null)
                 {
-                    // Lấy tên file và lưu file vào thư mục
                     fileName = Path.GetFileName(UploadImage.FileName);
                     string path = Path.Combine(Server.MapPath("~/image"), fileName);
                     UploadImage.SaveAs(path);
@@ -76,7 +95,7 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                     Description = n.Description,
                     Price = n.Price,
                     Quantity = n.Quantity,
-                    Photo = fileName, // Gán tên file nếu đã có
+                    Photo = fileName,
                     Discount = n.Discount,
                     StartDate = n.StartDate,
                     EndDate = n.EndDate,
@@ -91,6 +110,7 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
 
             return View(n);
         }
+
 
 
 
@@ -133,7 +153,24 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
 
             ViewBag.ListCate = new SelectList(db.Categories.ToList(), "CategoryId", "Name", n.CateId);
             ViewBag.ListProvider = new SelectList(db.Providers.ToList(), "ProviderId", "Name", n.ProviderId);
-
+            if (n.Discount > 0)
+            {
+                if (!n.StartDate.HasValue || !n.EndDate.HasValue)
+                {
+                    ModelState.AddModelError("", "Vui lòng nhập đầy đủ ngày bắt đầu và kết thúc khi có khuyến mãi.");
+                }
+                else if (n.StartDate > n.EndDate)
+                {
+                    ModelState.AddModelError("", "Ngày bắt đầu khuyến mãi phải nhỏ hơn ngày kết thúc.");
+                }
+            }
+            else
+            {
+                if (n.StartDate.HasValue || n.EndDate.HasValue)
+                {
+                    ModelState.AddModelError("", "Không được nhập ngày nếu không có khuyến mãi.");
+                }
+            }
             if (ModelState.IsValid)
             {
                 var model = db.Products.FirstOrDefault(m => m.ProductId == n.ProductId);

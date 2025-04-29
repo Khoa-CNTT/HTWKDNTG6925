@@ -45,12 +45,19 @@
                 @{
                     if (Model.Discount > 0)
                     {
-                        <p class="status">Giá KM (@Model.Discount%): <span class="pink">@string.Format("{0:#,###.##}", (Model.Price - (Model.Price * Model.Discount * 0.01)))₫</span></p>
+                        <p class="status">
+                            Giá KM (@Model.Discount%):
+                            <span class="pink">
+                                @string.Format("{0:#,###.##}", (Model.Price - (Model.Price * Model.Discount * 0.01)))₫
+                            </span>
+                        </p>
+                        <p>Giá khuyến mãi từ @(Model.StartDate?.ToString("dd/MM/yyyy")) đến @(Model.EndDate?.ToString("dd/MM/yyyy"))</p>
                     }
                 }
-                @*<p>Từ @Model.StartDate đến @Model.EndDate</p>*@
             </td>
         </tr>
+
+
         <tr>
             <td>
                 <div class="form-group">

@@ -1,5 +1,4 @@
-﻿
-@using PagedList.Mvc;
+﻿@using PagedList.Mvc;
 @using PagedList;
 @model PagedList.PagedList<Models.EF.Product>
 
@@ -11,45 +10,36 @@
         {
             i++;
             <div class="col-xs-6 col-sm-4 col-md-3 p5">
-                    <div class="boxsp">
-                        <div class="imgsp">
-                            <a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })" data-toggle="tooltip" title="@sp.Name"><img class="imgproduct" style="width:200px;height:180px;" src="@Url.Content("~/image/" + sp.Photo)"></a>
-
-                            @{ if (sp.Discount > 0)
-                                {
-                                    <div class="img-label">
-                                        <img style="width:50px ;height:50px" src="~/image/sale-icon.png">
-                                    </div>
-                                }
-                            }
-
-                        </div>
-                        <div class="namesp">
-                            <a href="">@sp.Name</a>
-                        </div>
-                        <div class="pricesp">Giá: @sp.Price.GetValueOrDefault(0).ToString("N0")₫</div>
-                        @{
-                            if(sp.Discount> 0)
-                            {
-                                <div class="pricesp" style="color:crimson">Giảm @sp.Discount%: @string.Format("{0:#,###.##}", (sp.Price - (sp.Price * sp.Discount * 0.01)))₫</div>
-                                @*<p style="text-align:center">Từ @string.Format("{0:d}", sp.StartDate) đến @string.Format("{0:d}", sp.EndDate)</p>*@
-                            }
+                <div class="boxsp">
+                    <div class="imgsp">
+                        <a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })" data-toggle="tooltip" title="@sp.Name"><img class="imgproduct" style="width:200px;height:180px;" src="@Url.Content("~/image/" + sp.Photo)"></a>
+                        @if (sp.Discount > 0)
+                        {
+                            <div class="img-label">
+                                <img style="width:50px ;height:50px" src="~/image/sale-icon.png">
+                            </div>
                         }
-                        <div class="button-hd">
-                            <a href="/them-gio-hang?ProductId=@sp.ProductId&quantity=1"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-                        </div>
                     </div>
+                    <div class="namesp">
+                        <a href="">@sp.Name</a>
+                    </div>
+                    <div class="pricesp">Giá: @sp.Price.GetValueOrDefault(0).ToString("N0")₫</div>
+                    @if (sp.Discount > 0)
+                    {
+                        <div class="pricesp" style="color:crimson">Giảm @sp.Discount%: @string.Format("{0:#,###.##}", (sp.Price - (sp.Price * sp.Discount * 0.01)))₫</div>
+                        @*<p style="text-align:center">Từ @string.Format("{0:d}", sp.StartDate) đến @string.Format("{0:d}", sp.EndDate)</p>*@
+                    }
+                    <div class="button-hd">
+                        <a href="/them-gio-hang?ProductId=@sp.ProductId&quantity=1"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
             if (i % 4 == 0)
             {
                 <div style="clear:both;"></div>
             }
-
-
-
         }
     }
-
 </div>
 
 <div style="clear:both;"></div>
@@ -60,11 +50,8 @@
     </div>
 </div>
 
-
 <style>
     .Menutrang li {
         display: inline;
     }
 </style>
-
-

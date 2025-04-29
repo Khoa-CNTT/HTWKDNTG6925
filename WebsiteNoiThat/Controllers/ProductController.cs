@@ -152,13 +152,20 @@ namespace WebsiteNoiThat.Controllers
         }
 
         // Xem tất cả sản phẩm
-         public ActionResult ShowProduct(int? page)
+        public ActionResult ShowProduct(int? page)
         {
             int pagenumber = (page ?? 1);
             int pagesize = 16;
-            var model =db.Products.Where(n => n.Discount == 0 || n.EndDate < DateTime.Now || n.StartDate > DateTime.Now).OrderBy(n=>n.Name).ToPagedList(pagenumber, pagesize);
+
+            // Lấy tất cả các sản phẩm, bao gồm những sản phẩm có khuyến mãi hợp lệ
+            var model = db.Products
+                          .Where(n => n.Discount >= 0) // Lọc những sản phẩm có Discount hợp lệ (bao gồm Discount = 0)
+                          .OrderBy(n => n.Name) // Sắp xếp theo tên sản phẩm
+                          .ToPagedList(pagenumber, pagesize); // Phân trang
+
             return View(model);
         }
+
 
         // Xem tất cả sản phẩm hot
         public ActionResult Hots(int? page)
