@@ -61,10 +61,18 @@
         <tr>
             <td>
                 <div class="form-group">
-                    <a style="font-family:unset;" href="/them-gio-hang?productid=@Model.ProductId&quantity=1" class="btn btn-primary fa fa-cart-plus"> Đặt mua hàng</a>
+                    @if (Model.Quantity > 0)
+                    {
+                        <a style="font-family:unset;" href="/them-gio-hang?productid=@Model.ProductId&quantity=1" class="btn btn-primary fa fa-cart-plus"> Đặt mua hàng</a>
+                    }
+                    else
+                    {
+                        <button class="btn btn-secondary" disabled>Đã bán hết sản phẩm</button>
+                    }
                 </div>
             </td>
         </tr>
+
     </table>
 }
 <hr>

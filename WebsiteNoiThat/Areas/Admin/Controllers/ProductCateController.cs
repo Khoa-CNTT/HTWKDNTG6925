@@ -89,7 +89,7 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
         [HasCredential(RoleId = "EDIT_CATE")]
         public ActionResult Edit(Category n)
         {
-            
+
 
             // Kiểm tra ModelState
             if (!ModelState.IsValid)
@@ -104,18 +104,27 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             return RedirectToAction("Show");
         }
 
-
         [HttpPost]
         [HasCredential(RoleId = "DELETE_CATE")]
         public ActionResult Delete(int CategoryId)
         {
-            var model = db.Categories.Find(CategoryId);
-            if (model != null)
+            var category = db.Categories.Find(CategoryId);
+            if (category != null)
             {
-                db.Categories.Remove(model);
+                // Kiểm tra xem có sản phẩm nào liên kết không
+                bool hasLinkedProducts = db.Products.Any(p => p.CateId == CategoryId);
+                if (hasLinkedProducts)
+                {
+                    TempData["DeleteError"] = "Còn sản phẩm đang được liên kết với danh mục hiện tại";
+                    return RedirectToAction("Show");
+                }
+
+                db.Categories.Remove(category);
                 db.SaveChanges();
             }
+
             return RedirectToAction("Show");
         }
+
     }
 }

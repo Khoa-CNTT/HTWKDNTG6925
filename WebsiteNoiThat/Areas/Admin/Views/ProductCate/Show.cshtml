@@ -2,11 +2,22 @@
 @{
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+
 <h2>Danh sách loại sản phẩm</h2>
+
+<!-- Thông báo lỗi khi xóa không thành công -->
+@if (TempData["DeleteError"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["DeleteError"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
 <p>
     <a href="@Url.Action("Add", "ProductCate")" class="btn btn-primary" style="margin-top:10px;margin-bottom:10px;">Thêm loại sản phẩm</a>
 </p>
-<!-- DataTales Example -->
+
 <div class="card shadow mb-4">
     <div class="card-body">
         <div class="table-responsive">
@@ -18,17 +29,14 @@
                         <th>Diễn giải</th>
                         <th>Mã loại SP</th>
                         <th>Hành động</th>
-
                     </tr>
                 </thead>
-
                 <tbody>
-
                     @foreach (var item in Model)
                     {
                         <tr class="Search">
-                            <td> @item.CategoryId</td>
-                            <td> @item.Name</td>
+                            <td>@item.CategoryId</td>
+                            <td>@item.Name</td>
                             <td>@item.MetaTitle</td>
                             <td>@item.ParId</td>
                             <td>
@@ -40,20 +48,16 @@
                             </td>
                         </tr>
                     }
-
                 </tbody>
             </table>
         </div>
-
 
         <script src="~/Scripts/jquery-3.3.1.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
         <script src="~/Content/DataTable/js/jquery.dataTables.min.js"></script>
         <script src="~/Content/DataTable/js/dataTables.bootstrap.min.js"></script>
-
         <script type="text/javascript">
             $('#example').DataTable();
         </script>
-        <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-
-
+    </div>
+</div>

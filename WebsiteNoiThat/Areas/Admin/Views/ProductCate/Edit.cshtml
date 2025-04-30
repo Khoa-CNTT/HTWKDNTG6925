@@ -44,12 +44,16 @@
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Save" class="btn btn-default" />
+            <button type="submit" class="btn btn-success">
+                <i class="glyphicon glyphicon-plus"></i> Thêm mới
+            </button>
+            <a href="@Url.Action("Show", "ProductCate", new { area = "Admin" })" class="btn btn-danger" style="margin-left: 10px;">
+                <i class="glyphicon glyphicon-remove"></i> Huỷ bỏ
+            </a>
         </div>
     </div>
+
 </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Show")
-</div>
+

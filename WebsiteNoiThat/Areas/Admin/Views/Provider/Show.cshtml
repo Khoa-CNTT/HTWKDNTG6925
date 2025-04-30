@@ -1,14 +1,29 @@
 ﻿@model IEnumerable<Models.EF.Provider>
 
 @{
-
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Danh sách nhà cung cấp</h2>
+
 <p>
     <a href="@Url.Action("Add", "Provider")" class="btn btn-primary" style="margin-top:20px;margin-bottom:15px;">Thêm nhà cung cấp</a>
 </p>
+
+<!-- Hiển thị thông báo thành công hoặc lỗi -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-body">
@@ -45,7 +60,6 @@
 
         </div>
     </div>
-
 </div>
 
 <script src="~/Scripts/jquery-3.3.1.js"></script>
@@ -54,9 +68,6 @@
 <script src="~/Content/DataTable/js/dataTables.bootstrap.min.js"></script>
 
 <script type="text/javascript">
-
     $('#example').DataTable();
 </script>
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-
-
