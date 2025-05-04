@@ -24,16 +24,16 @@
 {
     <div class="form-check-inline">
         Từ
-        <input type="text" class="form-control col-md-4" style="margin-left: 10px; margin-right: 10px;"
-               id="dfr" name="dfr" placeholder="yyyy-MM-dd"
+        <input type="date" class="form-control col-md-4" style="margin-left: 10px; margin-right: 10px;"
+               id="dfr" name="dfr"
                oninput="validateDateInput('dfr')" required>
-        <small id="dfrError" class="text-danger" style="display: none;">Vui lòng nhập ngày theo định dạng yyyy-MM-dd</small>
+        <small id="dfrError" class="text-danger" style="display: none;">Vui lòng nhập ngày hợp lệ</small>
 
         Đến
-        <input type="text" class="form-control col-md-4" style="margin-left: 10px; margin-right: 10px;"
-               id="dto" name="dto" placeholder="yyyy-MM-dd"
+        <input type="date" class="form-control col-md-4" style="margin-left: 10px; margin-right: 10px;"
+               id="dto" name="dto"
                oninput="validateDateInput('dto')" required>
-        <small id="dtoError" class="text-danger" style="display: none;">Vui lòng nhập ngày theo định dạng yyyy-MM-dd</small>
+        <small id="dtoError" class="text-danger" style="display: none;">Vui lòng nhập ngày hợp lệ</small>
 
         <input type="submit" value="Xem" class="btn btn-primary" onclick="return validateDateRange()" disabled />
     </div>

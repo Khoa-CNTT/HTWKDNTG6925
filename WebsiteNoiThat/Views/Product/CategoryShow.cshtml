@@ -15,23 +15,30 @@
                 if (sp.Discount != 0 && sp.EndDate > DateTime.Now && sp.StartDate < DateTime.Now)
                 {
                     <div class="col-xs-6 col-sm-4 col-md-3 p5">
-                        <div class="boxsp">
-                            <div class="imgsp">
-                                <a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })" data-toggle="tooltip" title="@sp.Name"><img class="imgproduct" style="width:200px;height:160px;" src="@Url.Content("~/image/" + sp.Photo)"></a>
-                                <div class="img-label">
-                                    <img style="width:50px;height:50px;" src="~/image/sale-icon.png">
+                                <div class="boxsp">
+                                    <div class="imgsp">
+                                        <a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })" data-toggle="tooltip" title="@sp.Name"><img class="imgproduct" style="width:200px;height:160px;" src="@Url.Content("~/image/" + sp.Photo)"></a>
+                                        <div class="img-label">
+                                            <img style="width:50px;height:50px;" src="~/image/sale-icon.png">
+                                        </div>
+                                    </div>
+                                    <div class="namesp">
+                                        <a href="">@sp.Name</a>
+                                    </div>
+                                    <div class="pricesp"><i>Khuyến mãi @string.Format("{0:#,###.##}", (sp.Price - (sp.Price * sp.Discount * 0.01)))₫</i><br /><strike style="color:dimgray"> @sp.Price.GetValueOrDefault(0).ToString("N0") </strike></div>
+                                    <p>Áp dụng từ ngày @string.Format("{0:d}", sp.StartDate) - @string.Format("{0:d}", sp.EndDate)</p>
+                                    <div class="button-hd">
+                                        @if (sp.Quantity > 0)
+                                        {
+                                            <a href="/them-gio-hang?ProductId=@sp.ProductId&quantity=1" title="Thêm vào giỏ hàng"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                        }
+                                        else
+                                        {
+                                            <button class="btn btn-secondary" disabled title="Hết hàng"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                                        }
+                                    </div>
+
                                 </div>
-                            </div>
-                            <div class="namesp">
-                                <a href="">@sp.Name</a>
-                            </div>
-                            <div class="pricesp"><i>Khuyến mãi @string.Format("{0:#,###.##}", (sp.Price - (sp.Price * sp.Discount * 0.01)))₫</i><br /><strike style="color:dimgray"> @sp.Price.GetValueOrDefault(0).ToString("N0") </strike></div>
-                            <p>Áp dụng từ ngày @string.Format("{0:d}", sp.StartDate) - @string.Format("{0:d}", sp.EndDate)</p>
-                            <div class="button-hd">
-                                <a href="/them-gio-hang?ProductId=@sp.ProductId&quantity=1"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-                                @*<a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })"><i class="fa fa-eye" aria-hidden="true"></i></a>*@
-                            </div>
-                        </div>
                     </div>
 
                 }
