@@ -40,10 +40,13 @@
                         <a href="/Admin/User/Edit?UserId=@item.UserId"><span class="fa fa-edit"></span></a>
                         <a href="/Admin/User/Delete?UserId=@item.UserId"><span class="far fa-trash-alt"></span></a>
                     </td>*@
-                    <td width="120px;">
-                        <input type="button" class="btn btn-sm btn-primary" value="Sửa" onclick="location.href='/Admin/User/Edit?UserId=@item.UserId'" /> |
-                        <input type="button" class="btn btn-sm btn-danger" value="Xóa" onclick="location.href='/Admin/User/Delete?UserId=@item.UserId'" />
-                    </td>
+                <td width="120px;">
+                    <input type="button" class="btn btn-sm btn-primary" value="Sửa" onclick="location.href='/Admin/User/Edit?UserId=@item.UserId'" /> |
+                    <form action="@Url.Action("Delete", "User", new { area = "Admin" })" method="post" style="display:inline;">
+                        <input type="hidden" name="UserId" value="@item.UserId" />
+                        <input type="submit" class="btn btn-sm btn-danger" value="Xóa" onclick="return confirm('Bạn có chắc chắn muốn xóa?');" />
+                    </form>
+                </td>
                 </tr>
                 }
             </tbody>

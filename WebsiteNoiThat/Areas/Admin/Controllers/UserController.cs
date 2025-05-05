@@ -1,6 +1,5 @@
 ﻿using Models.EF;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,11 +11,13 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
     public class UserController : HomeController
     {
         DBNoiThat db = new DBNoiThat();
+
         public ActionResult Index()
         {
             return View();
         }
 
+        // Admin có thể xem tất cả người dùng
         [HasCredential(RoleId = "VIEW_ADMIN")]
         public ActionResult Show()
         {
@@ -27,6 +28,7 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             return View(models);
         }
 
+        // Admin có thể thêm người dùng
         [HttpGet]
         [HasCredential(RoleId = "ADD_ADMIN")]
         public ActionResult Add()
@@ -38,25 +40,29 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             return View();
         }
 
+        // Admin xử lý việc thêm người dùng
         [HttpPost]
         [HasCredential(RoleId = "ADD_ADMIN")]
         public ActionResult Add(User n)
         {
             ViewBag.ListGroups = new SelectList(db.UserGroups.Where(a => a.GroupId != "USER").ToList(), "GroupId", "Name");
-            var model = new User();
-            model.Name = n.Name;
-            model.Address = n.Address;
-            model.Phone = n.Phone;
-            model.Username = n.Username;
-            model.Password = Encryptor.MD5Hash(n.Password);
-            model.Email = n.Email;
-            model.GroupId = n.GroupId;
-            model.Status = n.Status;
+            var model = new User
+            {
+                Name = n.Name,
+                Address = n.Address,
+                Phone = n.Phone,
+                Username = n.Username,
+                Password = Encryptor.MD5Hash(n.Password),  // Mã hóa mật khẩu
+                Email = n.Email,
+                GroupId = n.GroupId,
+                Status = n.Status
+            };
             db.Users.Add(model);
             db.SaveChanges();
             return RedirectToAction("Show");
         }
 
+        // Admin chỉnh sửa thông tin người dùng
         [HttpGet]
         [HasCredential(RoleId = "EDIT_ADMIN")]
         public ActionResult Edit(int UserId)
@@ -65,41 +71,46 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             ViewBag.username = session.Username;
 
             ViewBag.ListGroups = new SelectList(db.UserGroups.Where(a => a.GroupId != "USER").ToList(), "GroupId", "Name");
-            var models= db.Users.Where(a => a.UserId == UserId).First();
-            if (models == null)
+            var user = db.Users.FirstOrDefault(a => a.UserId == UserId);
+            if (user == null)
             {
                 Response.StatusCode = 404;
                 return RedirectToAction("Show");
             }
-            return View(models);
+            return View(user);
         }
 
+        // Admin xử lý việc chỉnh sửa người dùng
         [HttpPost]
         [HasCredential(RoleId = "EDIT_ADMIN")]
-        public ActionResult Edit(User n)
+        public ActionResult Edit(User user, string NewPassword)
         {
-            ViewBag.ListGroups = new SelectList(db.UserGroups.Where(a => a.GroupId != "USER").ToList(), "GroupId", "Name");
-            if (ModelState.IsValid)
+            var userInDb = db.Users.Find(user.UserId);
+            if (userInDb != null)
             {
-                var models = db.Users.Where(a => a.UserId == n.UserId).First();
-                models.Name = n.Name;
-                models.Username = n.Username;
-                models.Password = Encryptor.MD5Hash(n.Password);
-                models.GroupId = n.GroupId;
-                models.Phone = n.Phone;
-                models.Status = n.Status;
-                models.Email = n.Email;
-                models.Address = n.Address;
+                userInDb.Name = user.Name;
+                userInDb.Phone = user.Phone;
+                userInDb.Address = user.Address;
+                userInDb.Email = user.Email;
+                userInDb.Username = user.Username;
+                userInDb.GroupId = user.GroupId;
+                userInDb.Status = user.Status;
+
+                if (!string.IsNullOrEmpty(NewPassword))
+                {
+                    userInDb.Password = Encryptor.MD5Hash(NewPassword);
+                }
+
                 db.SaveChanges();
+                TempData["SuccessMessage"] = "Cập nhật thông tin tài khoản thành công!";
                 return RedirectToAction("Show");
             }
-            else
-            {
-                return JavaScript("alert('Error');");
-            }
+
+            ModelState.AddModelError("", "Không tìm thấy tài khoản.");
+            return View(user);
         }
 
-
+        // Admin hoặc User có thể xóa người dùng
         [HttpPost]
         [HasCredential(RoleId = "DELETE_ADMIN")]
         public ActionResult Delete(FormCollection formCollection)
@@ -111,32 +122,61 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                 var model = db.Users.Find(Convert.ToInt32(id));
                 db.Users.Remove(model);
                 db.SaveChanges();
-
-
             }
             return RedirectToAction("Show");
         }
 
-
+        // User có thể chỉnh sửa thông tin cá nhân của chính mình
         [HttpGet]
-        [HasCredential(RoleId = "VIEW_ADMIN")]
         public ActionResult UserProfile()
         {
             var session = (UserLogin)Session[WebsiteNoiThat.Common.Commoncontent.user_sesion_admin];
-            var model = db.Users.First(n => n.UserId == session.UserId);
-            ViewBag.username = session.Username;
+            if (session == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
 
+            var model = db.Users.FirstOrDefault(n => n.UserId == session.UserId);
+            if (model == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            ViewBag.username = session.Username;
             return View(model);
         }
 
+        // User xử lý việc cập nhật thông tin cá nhân
         [HttpPost]
-        [HasCredential(RoleId = "EDIT_ADMIN")]
-        public ActionResult UserProfile(User a)
+        public ActionResult UserProfile(User user, string NewPassword)
         {
-            db.Entry(a).State = System.Data.Entity.EntityState.Modified;
-            db.SaveChanges();
-            return View();
-        }
+            var session = (UserLogin)Session[WebsiteNoiThat.Common.Commoncontent.user_sesion_admin];
+            if (session == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
 
+            var userInDb = db.Users.Find(user.UserId);
+            if (userInDb != null)
+            {
+                userInDb.Name = user.Name;
+                userInDb.Phone = user.Phone;
+                userInDb.Address = user.Address;
+                userInDb.Email = user.Email;
+                userInDb.Status = user.Status;
+
+                if (!string.IsNullOrEmpty(NewPassword))
+                {
+                    userInDb.Password = Encryptor.MD5Hash(NewPassword); // Mã hóa mật khẩu
+                }
+
+                db.SaveChanges();
+                TempData["SuccessMessage"] = "Cập nhật thông tin tài khoản thành công!";
+                return RedirectToAction("UserProfile");
+            }
+
+            ModelState.AddModelError("", "Không tìm thấy tài khoản.");
+            return View(user);
+        }
     }
 }

@@ -57,23 +57,12 @@
                                             <div class="form-group">
                                                 @Html.TextBoxFor(model => model.Password, new { @class = "form-control form-control-user", @id = "exampleInputPassword", @placeholder = "Mật khẩu", type = "password" })
                                             </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox small">
-                                                    @*@Html.CheckBoxFor(model => model.rememberme, new { @class = "custom-control-input", @id = "customCheck" })*@
-
-                                                    <label class="custom-control-label" for="customCheck">Remember Me</label>
-                                                </div>
-                                            </div>
+                                            
                                             <button type="submit" class="btn btn-primary btn-user btn-block">
-                                                Đặng nhập
+                                                Đăng nhập
                                             </button>
                                             <hr>
-                                            <a href="index.html" class="btn btn-google btn-user btn-block">
-                                                <i class="fab fa-google fa-fw"></i> Đăng nhập với Google
-                                            </a>
-                                            <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                                <i class="fab fa-facebook-f fa-fw"></i> Đăng nhập với Facebook
-                                            </a>
+                                            
                                         </fieldset>
                                     }
 
