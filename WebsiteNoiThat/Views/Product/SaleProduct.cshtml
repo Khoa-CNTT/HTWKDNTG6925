@@ -4,7 +4,7 @@
 <div class="ct-boxmain row m0">
 
     @{ int i = 0;
-        foreach (var sp in Model)
+        foreach (var sp in Model.Where(x => x.IsVisible))
         {
             i++;
             <div class="col-xs-6 col-sm-4 col-md-3 p5">
