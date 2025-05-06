@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -15,15 +16,12 @@ namespace WebsiteNoiThat.Models
         public string Name { get; set; }
 
         [StringLength(50, ErrorMessage = "Địa chỉ không được quá 50 ký tự.")]
-        [Required(ErrorMessage = "Dia chi khong duoc de trong")]
+        [Required(ErrorMessage = "Địa chỉ không được để trống")]
         
         public string Address { get; set; }
-        [Required(ErrorMessage = "So dien thoai khong duoc de trong")]
-        [StringLength(10, ErrorMessage = "So dien thoai phai co 10 ky tu")]
-        [RegularExpression(@"^\d{10}$", ErrorMessage = "So dien thoai khong hop le. Vui long nhap 10 so.")]
-        [Phone(ErrorMessage = "So dien thoai khong hop le.")]
 
-        [Range(1000000000, 9999999999, ErrorMessage = "Số điện thoại không hợp lệ.")]
+        [Required(ErrorMessage = "Số điện thoại không được để trống.")]
+        [DisplayName("Số điện thoại")]
         public int? Phone { get; set; }
 
         [StringLength(25, ErrorMessage = "Tên đăng nhập không được quá 25 ký tự.")]
@@ -41,13 +39,14 @@ namespace WebsiteNoiThat.Models
 
         [StringLength(50, ErrorMessage = "GroupId không được quá 50 ký tự.")]
         public string GroupId { get; set; }
-
+        
+        [Required(ErrorMessage = "Kích hoạt tài khoản không được để trống.")]
         public bool Status { get; set; }
 
         [Range(10000000, 99999999, ErrorMessage = "Số thẻ không hợp lệ.")]
         public int? NumberCard { get; set; }
 
-        [Range(100000000, 999999999, ErrorMessage = "Số chứng minh nhân dân không hợp lệ.")]
+        [Range(100000000, 999999999, ErrorMessage = "Số CCCD không hợp lệ.")]
         public int? Indentification { get; set; }
     }
 }

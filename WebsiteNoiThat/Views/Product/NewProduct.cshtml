@@ -7,7 +7,7 @@
 <div class="row">
     <div id="spmoi" class="owl-carousel">
         @{ int i = 0;
-            foreach (var sp in Model)
+            foreach (var sp in Model.Where(x => x.IsVisible))
             {
                 i++;
                     <div class="item">

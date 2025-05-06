@@ -37,6 +37,8 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                                          StartDate = a.StartDate,
                                          EndDate = a.EndDate,
                                          Photo = a.Photo,
+                                         IsVisible = a.IsVisible 
+
                                      }).ToList();
 
             return View(productViewModels);
@@ -226,6 +228,17 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                 db.SaveChanges(); // Lưu thay đổi
             }
             return RedirectToAction("Show"); // Chuyển hướng về danh sách sản phẩm
+        }
+        [HttpPost]
+        public ActionResult ToggleVisibility(int ProductId)
+        {
+            var product = db.Products.Find(ProductId);
+            if (product != null)
+            {
+                product.IsVisible = !product.IsVisible;
+                db.SaveChanges();
+            }
+            return RedirectToAction("Show");
         }
 
 

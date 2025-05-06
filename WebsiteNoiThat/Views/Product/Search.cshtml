@@ -9,7 +9,7 @@
     <h4>Kết quả tìm kiếm theo từ khóa: @ViewBag.Keyword</h4>
     <div class="ct-boxmain row m0">
         @{ int i = 0;
-            foreach (var sp in Model)
+            foreach (var sp in Model.Where(x => x.IsVisible))
             {
                 i++;
                 if (sp.Discount != 0 && sp.EndDate > DateTime.Now && sp.StartDate < DateTime.Now)

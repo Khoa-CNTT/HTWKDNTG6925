@@ -24,44 +24,51 @@
                         <th>Số lượng</th>
                         <th>Khuyến mãi</th>
                         <th>Giá</th>
+                        <th>Trạng thái</th>
                         <th>Hành động</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var item in Model)
                     {
-                        <tr class="Search">
+                        <tr class="Search @(item.IsVisible ? "" : "table-danger")">
                             <td style="text-align:center;">@item.ProductId</td>
-                            <td style="text-align:center;">@item.Name</td>
-                            <td style="text-align:center;"><img style="height:100px" src="@Url.Content("~/image/" + item.Photo)" alt=""></td>
+                            <td style="text-align:center;">
+                                @item.Name
+                                @if (!item.IsVisible)
+                                {
+                                    <span class="badge ml-1 btn-hidden">Đã ẩn</span>
+                                }
+                            </td>
+                            <td style="text-align:center;">
+                                <img style="height:100px" src="@Url.Content("~/image/" + item.Photo)" alt="">
+                            </td>
                             <td style="text-align:center;">@item.Description</td>
                             <td style="text-align:center;">@item.CateName</td>
                             <td style="text-align:center;">@item.ProviderName</td>
                             <td style="text-align:center;">@item.Quantity</td>
                             <td style="text-align:center;">@item.Discount%</td>
                             <td style="text-align:center;">@item.Price.GetValueOrDefault(0).ToString("N0")₫</td>
-                            <td>
-                                <a href="/Admin/Product/Edit?ProductId=@item.ProductId"><span class="fa fa-edit"></span></a>
+                            <td style="text-align:center;">
+                                <form action="@Url.Action("ToggleVisibility", "Product")" method="post" style="display:inline;">
+                                    <input type="hidden" name="ProductId" value="@item.ProductId" />
+                                    @if (item.IsVisible)
+                                    {
+                                        <input type="submit" class="btn btn-sm btn-success" value="Đang hiển thị" />
+                                    }
+                                    else
+                                    {
+                                        <input type="submit" class="btn btn-sm" style="background-color: #d3d3d3; border-color: #d3d3d3;" value="Đã ẩn" />
+                                    }
+                                </form>
+                            </td>
+
+                            <td style="text-align:center;">
+                                <a href="/Admin/Product/Edit?ProductId=@item.ProductId" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
                                 <form action="@Url.Action("Delete", "Product")" method="post" style="display:inline;">
                                     <input type="hidden" name="ProductId" value="@item.ProductId" />
                                     <input type="submit" class="btn btn-sm btn-danger" value="Xóa" onclick="return confirm('Bạn có chắc chắn muốn xóa?');" />
-                                </form>                                @*<div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                Are you sure want to delete this item?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <a asp-page-handler="Delete" asp-route-Id="@item.ProductId" id="deleteBtn" class="btn bg-danger mr-1">Xoá</a>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Huỷ</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>*@
+                                </form>
                             </td>
                         </tr>
                     }
@@ -79,4 +86,12 @@
 <script type="text/javascript">
     $('#example').DataTable();
 </script>
-<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<!-- Tuỳ chỉnh CSS cho dòng ẩn -->
+<style>
+    .btn-hidden {
+        background-color: #e0e0e0; 
+        border-color: #e0e0e0;
+    }
+</style>
+

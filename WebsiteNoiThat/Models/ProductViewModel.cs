@@ -63,5 +63,7 @@ namespace WebsiteNoiThat.Models
         [DisplayName("Giảm giá (%)")]
         [Range(0, 100, ErrorMessage = "Giảm giá phải trong khoảng từ 0 đến 100.")]
         public int? Discount { get; set; }
+        public bool IsVisible { get; set; }
+
     }
 }

@@ -119,12 +119,24 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
 
             foreach (string id in ids)
             {
-                var model = db.Users.Find(Convert.ToInt32(id));
+                int userId = Convert.ToInt32(id);
+                var model = db.Users.Find(userId);
+
+                // Kiểm tra nếu người dùng có đơn hàng thì không cho xóa
+                bool hasOrders = db.Orders.Any(o => o.UserId == userId);
+                if (hasOrders)
+                {
+                    TempData["Error"] = $"Không thể xóa tài khoản có đơn hàng (UserId: {userId}).";
+                    continue; // bỏ qua và xử lý tiếp user khác
+                }
+
                 db.Users.Remove(model);
                 db.SaveChanges();
             }
+
             return RedirectToAction("Show");
         }
+
 
         // User có thể chỉnh sửa thông tin cá nhân của chính mình
         [HttpGet]

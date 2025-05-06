@@ -30,6 +30,7 @@ namespace Models
         public DateTime? EndDate { get; set; }
 
         public int? Discount { get; set; }
+        public bool IsVisible { get; set; }
 
 
 

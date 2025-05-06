@@ -206,6 +206,7 @@
     <Content Include="Areas\Admin\Themes\dist\css\sb-admin-2.min.css" />
     <Content Include="Areas\Admin\Themes\dist\js\sb-admin-2.js" />
     <Content Include="Areas\Admin\Themes\dist\js\sb-admin-2.min.js" />
+    <Content Include="Areas\Admin\Themes\img\avataradmin.png" />
     <Content Include="Areas\Scripts\categorycontroller.js" />
     <Content Include="Areas\Scripts\mustache.min.js" />
     <Content Include="Areas\Admin\Themes\js\sb-admin-2.js" />

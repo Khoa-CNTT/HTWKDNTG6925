@@ -46,5 +46,7 @@
 
         [DisplayName("Giảm giá (%)")]
         public int? Discount { get; set; }
+        public bool IsVisible { get; set; }
+
     }
 }
