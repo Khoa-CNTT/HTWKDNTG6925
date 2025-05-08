@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nội Thất Cao Cấp</title>
+    <title>Nội Thất Seven</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -11,14 +11,14 @@
     <link href="~/Content/css/nivo-slider.css" rel="stylesheet" />
     <link href="~/Content/css/owl.carousel.css" rel="stylesheet" />
     <link href="~/Content/css/owl.theme.css" rel="stylesheet" />
-    <link href="~/Content/css/Slider.css" rel="stylesheet" />
     <link href="~/Scripts/jquery-ui.css" rel="stylesheet" />
     <link href="~/Content/css/style.css" rel="stylesheet" />
     <link href="~/Content/css/site.css" rel="stylesheet" />
+    <link href="~/Content/css/Slider.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     @*Sử dụng Bootstrap cục bộ*@
-     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" /> 
-     <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" /> 
+    @*Sử dụng Bootstrap cục bộ*@
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <div id="logo">
-                        <a style="FONT-SIZE: xx-large; font-weight:bold;">NỘI THẤT</a>
+                        <a style="FONT-SIZE: xx-large; font-weight:bold;">NỘI THẤT SEVEN</a>
                     </div>
                 </div>
                 <div id="account_cart">
@@ -84,10 +84,10 @@
             <section id="featured">
                 <div>
                     <div>
-                        <img class="slider" src="~/image/slide1.jpg" stt="0" alt="" />
-                        <img class="slider" src="~/image/slide2.jpg" stt="1" alt="" style="display:none;" />
-                        <img class="slider" src="~/image/slide3.jpg" alt="" stt="2" style="display:none;" />
-                        <img class="slider" src="~/image/slide4.jpg" alt="" stt="3" style="display:none;" />
+                        <img class="slider active" src="~/image/slider/slide1.jpg" stt="0" alt="" />
+                        <img class="slider" src="~/image/slider/slide2.jpg" stt="1" alt="" style="display:none;" />
+                        <img class="slider" src="~/image/slider/slide3.jpg" alt="" stt="2" style="display:none;" />
+                        <img class="slider" src="~/image/slider/slide4.jpg" alt="" stt="3" style="display:none;" />
                         <a href="" id="prev"><img src="~/image/Previous-icon.png" /></a>
                         <a href="" id="next"><img src="~/image/Next-2-2-icon.png" /></a>
                     </div>
@@ -217,35 +217,47 @@
     <script type="text/javascript">
         $(document).ready(function () {
             var stt = 0;
-            starimg = $("img.slider:first").attr("stt")
-            endimg = $("img.slider:last").attr("stt")
+            var imgs = $("img.slider");
+            var lastIndex = imgs.length - 1;
+            var intervalTime = 3000;
+            var slideInterval;
 
-            $("img.slider").each(function () {
-                if ($(this).is(':visible'))
-                    stt = $(this).attr("stt");
+            function showSlide(index) {
+                imgs.removeClass("active").hide();
+                imgs.eq(index).addClass("active").fadeIn(800);
+            }
+
+            function startSlider() {
+                slideInterval = setInterval(function () {
+                    stt = (stt >= lastIndex) ? 0 : stt + 1;
+                    showSlide(stt);
+                }, intervalTime);
+            }
+
+            function resetSlider() {
+                clearInterval(slideInterval);
+                startSlider();
+            }
+
+            $("#next").click(function (e) {
+                e.preventDefault();
+                stt = (stt >= lastIndex) ? 0 : stt + 1;
+                showSlide(stt);
+                resetSlider();
             });
-            $("#next").click(function () {
-                if (stt == endimg) {
-                    stt = -1;
-                }
-                next = ++stt;
-                $("img.slider").hide();
-                $("img.slider").eq(next).show();
+
+            $("#prev").click(function (e) {
+                e.preventDefault();
+                stt = (stt <= 0) ? lastIndex : stt - 1;
+                showSlide(stt);
+                resetSlider();
             });
-            $("#prev").click(function () {
-                if (stt == 0) {
-                    stt = endimg;
-                    prev = stt++;
-                }
-                prev = --stt;
-                $("img.slider").hide();
-                $("img.slider").eq(next).show();
-            });
-            setInterval(function () {
-                $("#next").click()
-            }, 2000);
-        })
+
+            // Bắt đầu tự động chuyển ảnh
+            startSlider();
+        });
     </script>
+
 
     <script>
         $(document).ready(function () {

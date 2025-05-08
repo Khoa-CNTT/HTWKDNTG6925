@@ -174,70 +174,100 @@ namespace WebsiteNoiThat.Controllers
 
         [HttpGet]
         public ActionResult Card(int UserId)
-
         {
-
             var session = (UserLogin)Session[WebsiteNoiThat.Common.Commoncontent.user_sesion];
+
             if (session != null)
             {
                 var checkuser = db.Cards.SingleOrDefault(n => n.UserId == session.UserId);
                 if (checkuser == null)
                 {
                     var m = db.Users.SingleOrDefault(n => n.UserId == UserId);
-                    if (m != null)
+                    var model = new Card
                     {
-                        var model = new Card();
-                        model.UserId = session.UserId;
-                        model.NumberCard = 0;
-                        model.UserNumber = 0;
-                        return View(model);
+                        UserId = session.UserId,
+                        NumberCard = 0,
+                        UserNumber = 0
+                    };
 
-                    }
-                    else
-                    {
-                        //var model = new Card();
-                        //model.Username = session.Username;
-                        //model.NumberCard = 0;
-                        //model.UseNumber = 0;
-                        var model = new Card();
-                        model.UserId = session.UserId;
-                        model.NumberCard = 0;
-                        model.UserNumber = 0;
-
-                        return View(model);
-                    }
+                    ViewBag.HasCard = false;
+                    return View(model);
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Đã có thẻ tích điểm. Bạn không thể đăng ký thêm.");
-                    return View();
+                    var model = new Card
+                    {
+                        UserId = checkuser.UserId,
+                        Identification = checkuser.Identification,
+                        NumberCard = checkuser.NumberCard
+                    };
+
+                    ViewBag.HasCard = true;
+                    ViewBag.CardNumber = checkuser.NumberCard;
+                    return View(model);
                 }
             }
             else
             {
-                var model = new Card();
-                model.UserId = UserId;
-                model.NumberCard = 0;
-                model.UserNumber = 0;
+                var model = new Card
+                {
+                    UserId = UserId,
+                    NumberCard = 0,
+                    UserNumber = 0
+                };
+
+                ViewBag.HasCard = false;
                 return View(model);
             }
-
-
         }
+
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Card(Card n)
         {
-            var model = new Card();
-            model.UserId = n.UserId;
-            model.NumberCard = 0;
-            model.UserNumber = 0;
-            model.Identification = n.Identification;
+            // Kiểm tra người dùng đã có thẻ chưa
+            var session = (UserLogin)Session[WebsiteNoiThat.Common.Commoncontent.user_sesion];
+            if (session != null)
+            {
+                var checkuser = db.Cards.SingleOrDefault(c => c.UserId == n.UserId);
+                if (checkuser != null)
+                {
+                    ModelState.AddModelError("", "Bạn đã có thẻ tích điểm.");
+                    ViewBag.HasCard = true;
+                    ViewBag.CardNumber = checkuser.NumberCard;
 
-            db.Cards.Add(model);
-            db.SaveChanges();
-            ViewBag.Success = "Đăng ký thẻ thành công";
-            return Redirect("/");
+                    var model = new Card
+                    {
+                        UserId = checkuser.UserId,
+                        Identification = checkuser.Identification,
+                        NumberCard = checkuser.NumberCard
+                    };
+                    return View(model);
+                }
+            }
+
+            if (ModelState.IsValid)
+            {
+                var model = new Card
+                {
+                    UserId = n.UserId,
+                    NumberCard = new Random().Next(100000, 999999), // sinh ngẫu nhiên mã thẻ
+                    UserNumber = 0,
+                    Identification = n.Identification
+                };
+
+                db.Cards.Add(model);
+                db.SaveChanges();
+
+                ViewBag.Success = "Đăng ký thẻ thành công";
+                return Redirect("/");
+            }
+
+            ViewBag.HasCard = false;
+            return View(n);
         }
+
+
 
         public ActionResult ViewLogin()
         {

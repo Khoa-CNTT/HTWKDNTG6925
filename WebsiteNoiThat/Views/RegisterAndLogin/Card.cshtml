@@ -5,10 +5,9 @@
 }
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-@using (Html.BeginForm("Card", "RegisterAndLogin", FormMethod.Post))
 
+@using (Html.BeginForm("Card", "RegisterAndLogin", FormMethod.Post))
 {
-   
     @Html.AntiForgeryToken()
 
 <div class="form-horizontal">
@@ -19,51 +18,90 @@
         </ol>
     </div>
     <hr />
-    <a href="/RegisterAndLogin/Login">Bỏ qua đăng ký thẻ tích điểm </a><br />
+    <a href="@Url.Action("Index", "Home")" class="btn btn-default">Bỏ qua đăng ký thẻ tích điểm</a>
+
     <div class="form-group">
         @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
         @if (ViewBag.Success != null)
         {
             <div class="alert alert-success">@ViewBag.Success</div>
         }
+
+        @if (ViewBag.HasCard != null && ViewBag.HasCard == true)
+        {
+            <div class="alert alert-warning">
+                Bạn đã có thẻ tích điểm: <strong>@ViewBag.CardNumber</strong>. Không thể đăng ký thêm.
+            </div>
+        }
     </div>
 
+    <!-- Mã khách hàng -->
     <div class="form-group">
-        <div class="col-md-offset-1">
-            <div class="input-group">
-                <h4>Mã khách hàng:<i> @Html.EditorFor(model => model.UserId, new { @class = "form-control ", @required = "" })</i></h4>
-                @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="col-md-offset-1">
-            <div class="input-group">
-                <h4>Chứng minh thư: <i>@Html.EditorFor(model => model.Identification, new { @class = "text-danger", @required = "" })</i></h4>
-                @Html.ValidationMessageFor(model => model.Identification, "", new { @class = "text-danger" })
-            </div>
+        <label class="control-label col-md-2">Mã khách hàng:</label>
+        <div class="col-md-4">
+            @Html.TextBoxFor(model => model.UserId, new
+            {
+                @class = "form-control",
+                @readonly = "readonly"
+            })
+            @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
         </div>
     </div>
 
+    <!-- CCCD -->
     <div class="form-group">
-        <div class="col-md-offset-1">
-            <div class="input-group">
-                <h4>Thẻ tích điểm: @Html.ValueFor(model => model.NumberCard)</h4>
+        <label class="control-label col-md-2">CCCD:</label>
+        <div class="col-md-4">
+            @if (ViewBag.HasCard != null && ViewBag.HasCard == true)
+            {
+                <p class="form-control-static">@Model.Identification</p>
+            }
+            else
+            {
+                @Html.TextBoxFor(model => model.Identification, new
+                {
+                    @class = "form-control",
+                    @placeholder = "Nhập số CCCD",
+                    required = "required"
+                })
+            }
+            @Html.ValidationMessageFor(model => model.Identification, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Chỉ hiện trường thẻ nếu chưa có thẻ -->
+    @if (ViewBag.HasCard != null && ViewBag.HasCard == true)
+    {
+        <!-- Hiển thị thông tin đã có thẻ -->
+        <div class="form-group">
+            <label class="control-label col-md-2">Thẻ tích điểm:</label>
+            <div class="col-md-4">
+                <p class="form-control-static">@Model.NumberCard</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Nếu chưa có thẻ, hiển thị ô nhập thẻ và nút đăng ký -->
+        <div class="form-group">
+            <label class="control-label col-md-2">ID Thẻ Tích Điểm:</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.NumberCard, new
+                {
+                    @class = "form-control",
+                    @readonly = "readonly"
+                })
                 @Html.ValidationMessageFor(model => model.NumberCard, "", new { @class = "text-danger" })
             </div>
         </div>
-    </div>
 
-
-
-
-
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Đăng ký" class="btn btn-success" />
-
+        <!-- Nút đăng ký -->
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Đăng ký" class="btn btn-success" />
+            </div>
         </div>
-    </div>
+    }
 </div>
-
 }
-

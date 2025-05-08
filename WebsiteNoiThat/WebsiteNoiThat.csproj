@@ -2495,6 +2495,7 @@
     <Content Include="image\ban1.jpg" />
     <Content Include="image\ban5.jpg" />
     <Content Include="image\ban6.jpg" />
+    <Content Include="image\banner1.png" />
     <Content Include="image\cach-thuc-mua-hang.gif" />
     <Content Include="image\dilac.jpg" />
     <Content Include="image\hot.png" />
@@ -2532,10 +2533,10 @@
     <Content Include="image\phone-24.png" />
     <Content Include="image\Previous-icon.png" />
     <Content Include="image\sale-icon.png" />
-    <Content Include="image\slide1.jpg" />
-    <Content Include="image\slide2.jpg" />
-    <Content Include="image\slide3.jpg" />
-    <Content Include="image\slide4.jpg" />
+    <Content Include="image\slider\slide1.jpg" />
+    <Content Include="image\slider\slide2.jpg" />
+    <Content Include="image\slider\slide3.jpg" />
+    <Content Include="image\slider\slide4.jpg" />
     <Content Include="image\tham1.jpg" />
     <Content Include="image\tham2.jpg" />
     <Content Include="image\tham3.jpg" />
@@ -2598,13 +2599,6 @@
     <Content Include="image\thumb_1514954400.jpg" />
     <Content Include="image\thumb_1514954504.jpg" />
     <Content Include="image\thumb_1514954903.jpg" />
-    <Content Include="image\tin1.jpg" />
-    <Content Include="image\tin2.jpg" />
-    <Content Include="image\tin3.jpg" />
-    <Content Include="image\tin4.jpg" />
-    <Content Include="image\tin5.jpg" />
-    <Content Include="image\tin6.jpg" />
-    <Content Include="image\tin7.jpg" />
     <Content Include="Rotativa\wkhtmltopdf.exe" />
     <Content Include="Scripts\basecontroller.js" />
     <Content Include="Scripts\bootstrap.js" />
