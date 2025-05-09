@@ -1,4 +1,4 @@
-namespace Models.EF
+﻿namespace Models.EF
 {
     using System;
     using System.Collections.Generic;
@@ -8,7 +8,8 @@ namespace Models.EF
 
     public partial class News
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        // Sử dụng Identity để SQL Server tự động sinh giá trị cho NewsId
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int NewsId { get; set; }
 
         public string Title { get; set; }

@@ -19,9 +19,29 @@ namespace WebsiteNoiThat.Controllers
         }
         public ActionResult Show(int NewsId)
         {
-            var model = db.News.SingleOrDefault(n => n.NewsId == NewsId);
+            var news = db.News.SingleOrDefault(n => n.NewsId == NewsId);
+
+            // Lấy 3 tin liên quan khác (trừ tin đang xem), mới nhất
+            var relatedNews = db.News
+                .Where(n => n.NewsId != NewsId)
+                .OrderByDescending(n => n.DateUpdate)
+                .Take(3)
+                .ToList();
+
+            ViewBag.RelatedNews = relatedNews;
+
+            return View(news);
+        }
+
+        public ActionResult View()
+        {
+            var model = db.News
+                          .OrderByDescending(n => n.DateUpdate) // Sắp xếp theo ngày cập nhật mới nhất
+                          .ToList();
+
             return View(model);
         }
+
 
     }
 }

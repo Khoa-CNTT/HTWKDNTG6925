@@ -53,21 +53,33 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
 
             if (model != null)
             {
-                ModelState.AddModelError("NewError", "Id already in user");
-
+                ModelState.AddModelError("NewError", "Id already exists.");
                 return View();
             }
             else
             {
-                var fileName = Path.GetFileName(file.FileName);
-                var path = Path.Combine(Server.MapPath("~/image"), fileName);
-                file.SaveAs(path);
-                n.Photo = file.FileName;
+                // Xử lý file upload
+                if (file != null && file.ContentLength > 0)
+                {
+                    var fileName = Path.GetFileName(file.FileName);
+                    var path = Path.Combine(Server.MapPath("~/image"), fileName);
+                    file.SaveAs(path);
+                    n.Photo = file.FileName;
+                }
+
+                // Gán giá trị cho DateUpdate là ngày hiện tại
+                n.DateUpdate = DateTime.Now;
+
+                // Không cần phải gán giá trị cho NewsId
                 db.News.Add(n);
-                db.SaveChanges();
+                db.SaveChanges();  // Lưu vào cơ sở dữ liệu
                 return RedirectToAction("Show");
             }
         }
+
+
+
+
 
         [HttpGet]
         [HasCredential(RoleId = "EDIT_NEWS")]

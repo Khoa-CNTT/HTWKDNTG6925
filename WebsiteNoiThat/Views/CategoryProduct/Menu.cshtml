@@ -7,9 +7,8 @@
 
         <div class="dropdown-submenu">
             <a class="dropdown-item @(children.Any() ? "has-children" : "")"
-               href="@(!children.Any() ? "/danh-muc/" + parentItem.CategoryId : "#")"
-               @(children.Any() ? "data-toggle=\"dropdown\"" : "")
-               style="font-weight:normal;">
+               href="/danh-muc/@parentItem.CategoryId"
+               style="font-weight:normal; position: relative;">
                 @parentItem.Name
             </a>
 
@@ -22,8 +21,7 @@
 
                         <div class="dropdown-submenu">
                             <a class="dropdown-item @(grandChildren.Any() ? "has-children" : "")"
-                               href="@(!grandChildren.Any() ? "/danh-muc/" + childItem.CategoryId : "#")"
-                               @(grandChildren.Any() ? "data-toggle=\"dropdown\"" : "")
+                               href="/danh-muc/@childItem.CategoryId"
                                style="font-weight:normal; margin-left: 10px;">
                                 @childItem.Name
                             </a>
@@ -47,4 +45,5 @@
             }
         </div>
     }
+
 </div>

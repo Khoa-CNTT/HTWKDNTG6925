@@ -1,18 +1,140 @@
 ﻿@model Models.EF.News
 @{
-    ViewBag.Title = "Show";
+    ViewBag.Title = "Tin Tức";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var related = ViewBag.RelatedNews as List<Models.EF.News>;
 }
 
-<div class="primary-content">
-    <h1 class="entry-title">@Model.Title</h1>
-    <ul class="entry-meta">
-        <li class="date">@Model.DateUpdate</li>
+<div class="news-container">
+    <h2 class="main-title text-center">TIN TỨC</h2>
 
-    </ul>
-    <p style="padding-left:200px;"><img style="width:500px;height:200px; " src="@Url.Content("~/image/" + Model.Photo)" alt="website template image"></p>
-    <p class="lead">
-        @Model.Detail
+    <div class="primary-content">
+        <h1 class="entry-title">@Model.Title</h1>
+        <p class="update-date">🕒 Cập nhật ngày: <strong>@Model.DateUpdate.Value.ToString("dd/MM/yyyy")</strong></p>
 
-      </p>
+        <div class="text-center">
+            <img src="@Url.Content("~/image/" + Model.Photo)" alt="@Model.Title" class="news-image">
+        </div>
+
+        <div class="lead news-detail">
+            @Html.Raw(Model.Detail)
+        </div>
+    </div>
+
+    @* Tin liên quan *@
+    @if (related != null && related.Any())
+    {
+        <div class="related-news">
+            <h3 class="related-title">📰 Tin liên quan</h3>
+            <div class="row">
+                @foreach (var item in related)
+                {
+                    <div class="col-md-4">
+                        <div class="related-item">
+                            <a href="@Url.Action("Show", "News", new { NewsId = item.NewsId })">
+                                <img src="@Url.Content("~/image/" + item.Photo)" alt="@item.Title" class="related-img" />
+                                <p class="related-text">@item.Title (@Model.DateUpdate.Value.ToString("dd/MM/yyyy"))</p>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
 </div>
+
+<style>
+    .news-container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        background: linear-gradient(to bottom right, #ffffff, #f4f6f8);
+        border-radius: 15px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 30px;
+    }
+
+    .entry-title {
+        font-size: 28px;
+        color: #34495e;
+        font-weight: bold;
+    }
+
+    .update-date {
+        font-size: 14px;
+        color: #7f8c8d;
+        margin-bottom: 20px;
+    }
+
+    .news-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        margin-bottom: 25px;
+        transition: transform 0.3s ease;
+    }
+
+        .news-image:hover {
+            transform: scale(1.03);
+        }
+
+    .news-detail {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #333;
+        text-align: justify;
+    }
+
+    .related-news {
+        margin-top: 40px;
+    }
+
+    .related-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        font-weight: bold;
+    }
+
+    .related-item {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+        .related-item:hover {
+            transform: scale(1.02);
+        }
+
+    .related-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .related-text {
+        padding: 10px;
+        font-size: 16px;
+        color: #2c3e50;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+        a:hover .related-text {
+            color: #e74c3c;
+        }
+</style>

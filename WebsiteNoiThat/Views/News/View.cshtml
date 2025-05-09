@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Models.EF.News>
+
+@{
+    ViewBag.Title = "Danh sách tin tức";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-left mb-4">📰 DANH SÁCH TIN TỨC</h2>
+
+<div class="container">
+    <ul class="list-group">
+        @foreach (var item in Model.OrderByDescending(x => x.DateUpdate))
+        {
+            <li class="list-group-item d-flex align-items-center news-item">
+                <span style="font-size: 18px; margin-right: 10px;">📌</span>
+                <div class="news-content">
+                    <a href="@Url.Action("Show", "News", new { NewsId = item.NewsId })"
+                       style="font-weight: bold; font-size: 16px; text-decoration: none; color: #007bff;">
+                        @item.Title
+                    </a>
+                    <div style="font-size: 13px; color: gray;">
+                        @if (item.DateUpdate.HasValue)
+                        {
+                            @item.DateUpdate.Value.ToString("dd/MM/yyyy")
+                        }
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+
+<style>
+    .list-group-item {
+        padding: 15px; /* Tăng khoảng cách padding giữa các mục */
+        margin-bottom: 10px; /* Khoảng cách giữa các ô */
+        border-radius: 8px; /* Làm mềm các góc */
+        width: 100%; /* Đảm bảo các mục chiếm 100% chiều rộng */
+    }
+
+    .news-item {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Chiếm toàn bộ không gian trong li */
+        max-width: 800px; /* Giới hạn chiều rộng tối đa cho mục tin tức */
+        margin: 5px 0; /* Đảm bảo có khoảng cách giữa các mục */
+    }
+
+    .news-content {
+        width: 100%; /* Chiếm toàn bộ không gian trong li */
+        padding-left: 10px;
+    }
+
+        .news-content a {
+            display: block;
+            word-wrap: break-word; /* Đảm bảo rằng tiêu đề tin tức không bị tràn */
+        }
+
+    .list-group-item:hover {
+        background-color: #f5f5f5;
+    }
+
+    /* Đảm bảo phần tử list-group không bị căn giữa */
+    .container {
+        text-align: left; /* Căn trái toàn bộ nội dung */
+    }
+</style>
