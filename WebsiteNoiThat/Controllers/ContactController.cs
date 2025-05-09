@@ -1,70 +1,72 @@
 ﻿using Models.EF;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
 using WebsiteNoiThat.Models;
+using System.Configuration;
 
 namespace WebsiteNoiThat.Controllers
 {
     public class ContactController : Controller
     {
-        // GET: Contact
-        DBNoiThat db= new DBNoiThat();
-        public ActionResult Index()
-        {
-            return View();
-        }
+        DBNoiThat db = new DBNoiThat();
+
         [HttpGet]
         public ActionResult Contacts()
         {
             return View();
         }
-        
+
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Contacts(EmailModel obj)
         {
             try
             {
-                //Configuring webMail class to send emails  
-                //gmail smtp server  
-                WebMail.SmtpServer = "smtp.gmail.com";
-                //gmail port to send emails  
-                WebMail.SmtpPort = 587;
-                WebMail.SmtpUseDefaultCredentials = true;
-                //sending emails with secure protocol  
-                WebMail.EnableSsl = true;
-                //EmailId used to send emails from application  
-                WebMail.UserName = "sam.deeplearning123@gmail.com";
-                WebMail.Password = "dangvansam98";
+                if (ModelState.IsValid)
+                {
+                    // Lấy email đích từ Web.config
+                    string toEmail = ConfigurationManager.AppSettings["FromEmailAddress"];
 
-                //Sender email address.  
-                WebMail.From = "SenderGamilId@gmail.com";
+                    WebMail.SmtpServer = ConfigurationManager.AppSettings["SMTPHost"];
+                    WebMail.SmtpPort = Convert.ToInt32(ConfigurationManager.AppSettings["SMTPPort"]);
+                    WebMail.EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnabledSSL"]);
+                    WebMail.UserName = ConfigurationManager.AppSettings["FromEmailAddress"];
+                    WebMail.Password = ConfigurationManager.AppSettings["FromEmailPassword"];
+                    WebMail.From = WebMail.UserName;
 
-                //Send email  
-                WebMail.Send(to: obj.ToEmail, subject: obj.EmailSubject, body: obj.EMailBody, cc: obj.EmailCC, bcc: obj.EmailBCC, isBodyHtml: true);
-                ViewBag.Status = "Email Sent Successfully.";
-                var model = new Contact();
-                model.Content = obj.EMailBody;
-                model.Status = true;
-                model.EmailCC = obj.EmailCC;
-                db.Contacts.Add(model);
-                db.SaveChanges();
+                    // Gửi email
+                    WebMail.Send(
+                        to: toEmail,
+                        subject: obj.EmailSubject,
+                        body: "Email người gửi: " + obj.SenderEmail + "<br/><br/>" + obj.EMailBody,
+                        isBodyHtml: true
+                    );
 
-                
+                    // Lưu vào CSDL
+                    var model = new Contact
+                    {
+                        SenderEmail = obj.SenderEmail,
+                        EmailSubject = obj.EmailSubject,
+                        Content = obj.EMailBody,
+                        Status = true,
+                        CreatedAt = DateTime.Now
+                    };
+
+                    db.Contacts.Add(model);
+                    db.SaveChanges();
+
+                    ViewBag.Status = "Cảm ơn bạn đã liên hệ. Email đã được gửi thành công!";
+                    ModelState.Clear();
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                ViewBag.Status = "Problem while sending email, Please check details.";
-
+                ViewBag.Status = "Có lỗi xảy ra khi gửi email: " + ex.Message;
             }
+
             return View();
-            
         }
     }
 }

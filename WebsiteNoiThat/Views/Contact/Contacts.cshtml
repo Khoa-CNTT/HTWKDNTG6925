@@ -1,6 +1,5 @@
 ﻿@model WebsiteNoiThat.Models.EmailModel
 @{
-
     ViewBag.Title = "Liên hệ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -14,25 +13,21 @@
             <li class="active">Liên Hệ</li>
         </ol>
     </div>
-    <h3>Nội Thất Thông Minh</h3>
-                                                 <h4> Địa chỉ: Còn lâu mới nói nè</h4>
-                                                 <h4>Tel: 0354 639 103</h4> 
+    <h3>Nội Thất Seven</h3>
+    <h4> Địa chỉ: Thanh Khê Đà Nẵng</h4>
+    <h4>SĐT/Zalo: 0354 639 103</h4>
+
     <div class="form-horizontal">
+        <h3 class="text-primary">Liên hệ với chúng tôi qua thư</h3>
         <hr />
+
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.ToEmail, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.ToEmail, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ToEmail, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.EMailBody, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.SenderEmail, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.EMailBody, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.EMailBody, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.SenderEmail, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SenderEmail, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -45,36 +40,26 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.EmailCC, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.EMailBody, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.EmailCC, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.EmailCC, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.EmailBCC, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.EmailBCC, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.EmailBCC, "", new { @class = "text-danger" })
+                @Html.TextAreaFor(model => model.EMailBody, new { @class = "form-control", rows = 5 })
+                @Html.ValidationMessageFor(model => model.EMailBody, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Send" class="btn btn-primary" />
+                <input type="submit" value="Gửi liên hệ" class="btn btn-primary" />
             </div>
         </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10 text-success">
-                @ViewBag.Status
-            </div>
-        </div>
-    </div>
 
-}  
-    <div class="boxmain">
-        @Html.Action("NewProduct", "Product")
-        @Html.Action("CateKorea", "Product")
-        @Html.Action("CateHavana", "Product")
+        @if (ViewBag.Status != null)
+        {
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10 text-success">
+                    @ViewBag.Status
+                </div>
+            </div>
+        }
     </div>
+}

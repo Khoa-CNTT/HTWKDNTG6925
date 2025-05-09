@@ -1,21 +1,25 @@
-namespace Models.EF
+﻿namespace Models.EF
 {
     using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("Contact")]
     public partial class Contact
     {
+        [Key]
         public int ContactId { get; set; }
+
+        [StringLength(100)]
+        public string SenderEmail { get; set; }
+
+        [StringLength(200)]
+        public string EmailSubject { get; set; }
 
         public string Content { get; set; }
 
         public bool? Status { get; set; }
 
-        [StringLength(50)]
-        public string EmailCC { get; set; }
+        public DateTime? CreatedAt { get; set; }
     }
 }
