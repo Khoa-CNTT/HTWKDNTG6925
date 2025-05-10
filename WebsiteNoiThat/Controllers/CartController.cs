@@ -208,32 +208,57 @@ namespace WebsiteNoiThat.Controllers
                 var detailDao = new OrderDetailDao();
                 double total = 0;
                 double a = 0;
-                var htmldata = "<p><b>STT | Tên | Số lượng | Đơn giá | Khuyến mại</b></p>";
-                int count = 0;
+                var htmldata = @"
+        <table style='width:100%; border-collapse: collapse; font-family: Quicksand, sans-serif;'>
+            <thead style='background-color: #f8f9fa;'>
+                <tr>
+                    <th style='border: 1px solid #ccc; padding: 8px;'>STT</th>
+                    <th style='border: 1px solid #ccc; padding: 8px;'>Tên sản phẩm</th>
+                    <th style='border: 1px solid #ccc; padding: 8px;'>Số lượng</th>
+                    <th style='border: 1px solid #ccc; padding: 8px;'>Đơn giá (₫)</th>
+                    <th style='border: 1px solid #ccc; padding: 8px;'>Khuyến mại (%)</th>
+                </tr>
+            </thead>
+            <tbody>";
+
+                int count = 1;
                 foreach (var item in cart)
                 {
-                        var orderDetail = new OrderDetail();
-                        orderDetail.OrderId = id;
-                        orderDetail.ProductId = item.Product.ProductId;
+                    var discountprice = Convert.ToInt32(item.Product.Price - item.Product.Price * item.Product.Discount * 0.01);
+                    total += discountprice * item.Quantity;
 
-                        //a = Convert.ToInt32(item.Product.Price);
-                        var discountprice = Convert.ToInt32(item.Product.Price - item.Product.Price * item.Product.Discount * 0.01);
-                        orderDetail.Price = discountprice;
+                    htmldata += $@"
+            <tr>
+                <td style='border: 1px solid #ccc; padding: 8px; text-align:center;'>{count}</td>
+                <td style='border: 1px solid #ccc; padding: 8px;'>{item.Product.Name}</td>
+                <td style='border: 1px solid #ccc; padding: 8px; text-align:center;'>{item.Quantity}</td>
+                <td style='border: 1px solid #ccc; padding: 8px; text-align:right;'>{discountprice.ToString("N0")}</td>
+                <td style='border: 1px solid #ccc; padding: 8px; text-align:center;'>{item.Product.Discount}</td>
+            </tr>";
 
-                        orderDetail.Quantity = item.Quantity;
+                    // Cập nhật số lượng trong kho
+                    var pro = db.Products.FirstOrDefault(m => m.ProductId == item.Product.ProductId);
+                    pro.Quantity -= item.Quantity;
 
-                        detailDao.Insert(orderDetail);
-                        total += discountprice * item.Quantity;
-                        var pro = db.Products.FirstOrDefault(m => m.ProductId == item.Product.ProductId);
-                        pro.Quantity = pro.Quantity - item.Quantity;
-                        htmldata += "<p>"+count+"  |  "+item.Product.Name+ "  |  "+item.Quantity+"  |  "+ discountprice.ToString("N0") +" | "+item.Product.Discount.ToString()+" %</p>";
-                        db.SaveChanges();
-                        count += 1;
+                    // Thêm chi tiết đơn hàng
+                    detailDao.Insert(new OrderDetail
+                    {
+                        OrderId = id,
+                        ProductId = item.Product.ProductId,
+                        Price = discountprice,
+                        Quantity = item.Quantity
+                    });
+
+                    db.SaveChanges();
+                    count++;
                 }
+
+                htmldata += "</tbody></table>";
 
                 string content = System.IO.File.ReadAllText(Server.MapPath("~/Common/neworder.html"));
 
                 content = content.Replace("{{id}}", id.ToString());
+                content = content.Replace("{{OrderTime}}", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
                 content = content.Replace("{{CustomerName}}", n.Name);
                 content = content.Replace("{{Phone}}", n.Phone.ToString());
                 content = content.Replace("{{Email}}", n.Email);
@@ -243,8 +268,8 @@ namespace WebsiteNoiThat.Controllers
 
                 var toEmail = ConfigurationManager.AppSettings["ToEmailAddress"].ToString();
 
-                new MailHelper().SendMail(n.Email, "Đơn hàng mới từ NOITHATGO.VN", content);
-                //new MailHelper().SendMail(toEmail, "Đơn hàng mới từ NoiThatShop", content);
+                new MailHelper().SendMail(n.Email, "Đơn hàng mới từ Nội Thất Seven", content);
+                //new MailHelper().SendMail(toEmail, "Đơn hàng mới từ Nội Thất Seven", content);
 
                 ViewBag.EMAIL = n.Email;
                 return Redirect("/hoan-thanh");

@@ -1,37 +1,91 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title> Thông tin đơn hàng mới từ khách hàng: {{CustomerName}}</title>
+    <title>Thông tin đơn hàng mới từ khách hàng: {{CustomerName}}</title>
     <meta charset="utf-8" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <style>
-        body{
-            text-align: center;
-            font-family: Quicksand, sans-serif;
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0d6efd;
+        }
+
+        .divider {
+            margin: 20px 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .order-info b {
+            color: #0d6efd;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            color: #dc3545;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+            .footer b {
+                color: #333;
+            }
+
+        .shop-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #198754;
         }
     </style>
 </head>
 <body>
-    <a>CỬA HÀNG</a>
-    <h2>NỘI THẤT CAO CẤP</h2>
-    <p>-----------------------</p>
-    <h3>Chi tiết đơn đặt hàng: #{{id}}</h3>
-    Tên khách hàng: <b>{{CustomerName}}</b>
-    <br/>
-    Điện thoại: <b>{{Phone}}</b>
-    <br />
-    Email: <b>{{Email}}</b>
-    <br />
-    Địa chỉ: <b>{{Address}}</b>
-    <br />
-    <p>-----------------------</p>
-    <p>{{data}}</p>
-    <p>-----------------------</p>
-    Tổng tiền thanh toán: <b>{{Total}}₫</b>
-    <br />
-    <p>-----------------------</p>
-    <p>Hotline: <b>0968 012 687</b></p>
-    <p>Email: <b>dangvansam98@gmail.vn</b></p>
+    <div class="container">
+        <div class="shop-name">NỘI THẤT SEVEN</div>
+        <div class="divider"></div>
+        <h3>Đơn đặt hàng #{{id}}</h3>
+        <p><b>Thời gian:</b> {{OrderTime}}</p>
+
+        <div class="order-info">
+            <p>Tên khách hàng: <b>{{CustomerName}}</b></p>
+            <p>Điện thoại: <b>{{Phone}}</b></p>
+            <p>Email: <b>{{Email}}</b></p>
+            <p>Địa chỉ: <b>{{Address}}</b></p>
+        </div>
+
+        <div class="divider"></div>
+        <h4>Chi tiết sản phẩm</h4>
+        <div style="text-align: left;">
+            {{data}}
+        </div>
+
+        <div class="divider"></div>
+        <p class="total">Tổng tiền thanh toán: {{Total}}₫</p>
+
+        <div class="divider"></div>
+        <div class="footer">
+            <p>Hotline: <b>0354 639 103</b></p>
+            <p>Email: <b>doankltn105@gmail.com</b></p>
+        </div>
+    </div>
 </body>
-</html>  
+</html>

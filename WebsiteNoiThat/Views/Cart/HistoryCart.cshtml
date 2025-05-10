@@ -23,7 +23,7 @@
                         <th>Tên sản phẩm</th>
                         <th>Hình ảnh</th>
                         <th>Số lượng</th>
-                        <th>Giá sau khi giảm bằng thẻ tích điểm)</th>
+                        @*<th>Giá sau khi giảm bằng thẻ tích điểm)</th>*@
                         <th>Khuyến mãi</th>
                         <th>Thành tiền</th>
                         <th>Trạng thái</th>
@@ -38,7 +38,7 @@
                             <td>@item.Name</td>
                             <td><img src="@Url.Content("~/image/" + item.Photo)" width="100" /></td>
                             <td>@item.Quantity</td>
-                            <td>@item.Price.GetValueOrDefault(0).ToString("N0")₫</td>
+                            @*<td>@item.Price.GetValueOrDefault(0).ToString("N0")₫</td>*@
 
                             @*@if(item.Discount>0 && item.EndDate>DateTime.Now)*@
                             @if(item.Discount>0)

@@ -1,5 +1,5 @@
-﻿using System.Configuration;
-using System;
+﻿using System;
+using System.Configuration;
 using System.Net;
 using System.Net.Mail;
 
@@ -9,16 +9,24 @@ namespace WebsiteNoiThat.Common
     {
         public void SendMail(string toEmailAddress, string subject, string content)
         {
+            string fromEmail = ConfigurationManager.AppSettings["FromEmailAddress"];
+            string fromName = ConfigurationManager.AppSettings["FromEmailDisplayName"];
+            string fromPassword = ConfigurationManager.AppSettings["FromEmailPassword"];
+            string smtpHost = ConfigurationManager.AppSettings["SMTPHost"];
+            int smtpPort = int.Parse(ConfigurationManager.AppSettings["SMTPPort"]);
+            bool enableSsl = bool.Parse(ConfigurationManager.AppSettings["EnabledSSL"]);
+
             MailMessage message = new MailMessage();
-            message.From = new MailAddress(ConfigurationManager.AppSettings["FromEmailAddress"], ConfigurationManager.AppSettings["FromEmailDisplayName"]);
+            message.From = new MailAddress(fromEmail, fromName);
             message.To.Add(toEmailAddress);
             message.Subject = subject;
             message.Body = content;
             message.IsBodyHtml = true;
 
-            SmtpClient client = new SmtpClient();
-            client.EnableSsl = true; // Sử dụng SSL như cấu hình Gmail
+            SmtpClient client = new SmtpClient(smtpHost, smtpPort);
+            client.EnableSsl = enableSsl;
             client.UseDefaultCredentials = false;
+            client.Credentials = new NetworkCredential(fromEmail, fromPassword);
 
             try
             {
@@ -26,10 +34,10 @@ namespace WebsiteNoiThat.Common
             }
             catch (SmtpException ex)
             {
-                // Ghi log lỗi hoặc xử lý lỗi tại đây
+                // Log hoặc xử lý lỗi gửi mail
                 Console.WriteLine("Lỗi gửi email: " + ex.Message);
             }
         }
+
     }
 }
-
