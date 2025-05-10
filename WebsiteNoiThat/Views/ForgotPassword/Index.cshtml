@@ -1,0 +1,47 @@
+﻿@model WebsiteNoiThat.Models.ForgotPasswordModel
+@{
+    ViewBag.Title = "Quên mật khẩu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+@using (Html.BeginForm("Index", "ForgotPassword", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="breadcrumb-wp">
+            <ol class="breadcrumb">
+                <li><a class="pink" href="#"><i class="fa fa-unlock-alt"></i></a></li>
+                <li class="active">LẤY LẠI MẬT KHẨU</li>
+            </ol>
+        </div>
+        <hr />
+        <div class="form-group">
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-info">@ViewBag.Message</div>
+            }
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </div>
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @required = "" })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Gửi yêu cầu" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

@@ -195,6 +195,7 @@
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CategoryProductController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ForgotPasswordController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -203,6 +204,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ForgotPasswordModel.cs" />
     <Compile Include="Models\CardModel.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\EmailModel.cs" />
@@ -3156,6 +3158,7 @@
     <Content Include="Views\Product\SaleProduct.cshtml" />
     <Content Include="Views\Cart\tai_khoan_bi_khoa.cshtml" />
     <Content Include="Views\News\View.cshtml" />
+    <Content Include="Views\ForgotPassword\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

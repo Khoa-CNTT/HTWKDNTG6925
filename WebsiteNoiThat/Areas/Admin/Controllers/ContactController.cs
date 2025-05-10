@@ -1,35 +1,38 @@
 ﻿using Models.EF;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace WebsiteNoiThat.Areas.Admin.Controllers
 {
-    public class ContactController : HomeController
+    public class ContactController : Controller
     {
-        // GET: Admin/Contact
         DBNoiThat db = new DBNoiThat();
+
         public ActionResult Index()
         {
-            var model = db.Contacts.ToList();
+            var model = db.Contacts.OrderByDescending(x => x.CreatedAt).ToList();
             return View(model);
         }
+
+        [HttpPost]
         public ActionResult Delete(FormCollection formCollection)
         {
             string[] ids = formCollection["ContactId"].Split(new char[] { ',' });
 
             foreach (string id in ids)
             {
-                var model = db.Contacts.Find(Convert.ToInt32(id));
-                db.Contacts.Remove(model);
-                db.SaveChanges();
-
-
+                if (int.TryParse(id, out int contactId))
+                {
+                    var model = db.Contacts.Find(contactId);
+                    if (model != null)
+                    {
+                        db.Contacts.Remove(model);
+                        db.SaveChanges();
+                    }
+                }
             }
-            return RedirectToAction("Show");
+            return RedirectToAction("Index");
         }
-
     }
 }
