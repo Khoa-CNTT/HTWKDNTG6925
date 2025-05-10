@@ -3163,7 +3163,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\client\" />
-    <Folder Include="Views\TestEmail\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

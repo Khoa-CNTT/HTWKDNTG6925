@@ -70,13 +70,16 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             var session = (UserLogin)Session[WebsiteNoiThat.Common.Commoncontent.user_sesion_admin];
             ViewBag.username = session.Username;
 
-            ViewBag.ListGroups = new SelectList(db.UserGroups.Where(a => a.GroupId != "USER").ToList(), "GroupId", "Name");
+            // ✅ Hiển thị đầy đủ tất cả các nhóm, bao gồm cả "USER"
+            ViewBag.ListGroups = new SelectList(db.UserGroups.ToList(), "GroupId", "Name");
+
             var user = db.Users.FirstOrDefault(a => a.UserId == UserId);
             if (user == null)
             {
                 Response.StatusCode = 404;
                 return RedirectToAction("Show");
             }
+
             return View(user);
         }
 
@@ -85,6 +88,18 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
         [HasCredential(RoleId = "EDIT_ADMIN")]
         public ActionResult Edit(User user, string NewPassword)
         {
+            // Kiểm tra email đã tồn tại với User khác
+            bool emailExists = db.Users.Any(u => u.Email == user.Email && u.UserId != user.UserId);
+            if (emailExists)
+            {
+                ModelState.AddModelError("Email", "Email đã tồn tại trong hệ thống.");
+
+                // ✅ Hiển thị đầy đủ tất cả các nhóm khi load lại View
+                ViewBag.ListGroups = new SelectList(db.UserGroups.ToList(), "GroupId", "Name", user.GroupId);
+
+                return View(user);
+            }
+
             var userInDb = db.Users.Find(user.UserId);
             if (userInDb != null)
             {
@@ -106,9 +121,13 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                 return RedirectToAction("Show");
             }
 
+            // Trường hợp không tìm thấy người dùng trong database
+            ViewBag.ListGroups = new SelectList(db.UserGroups.ToList(), "GroupId", "Name", user.GroupId);
             ModelState.AddModelError("", "Không tìm thấy tài khoản.");
             return View(user);
         }
+
+
 
         // Admin hoặc User có thể xóa người dùng
         [HttpPost]

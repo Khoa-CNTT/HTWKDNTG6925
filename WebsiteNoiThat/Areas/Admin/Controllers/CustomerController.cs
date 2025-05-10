@@ -139,7 +139,16 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
         [HttpPost]
         [HasCredential(RoleId = "EDIT_USER")]
         public ActionResult Edit(UserModelView userViewModel, string NewPassword)
-        {   
+        {
+            // Kiểm tra email đã tồn tại cho user khác
+            bool emailExists = db.Users.Any(u => u.Email == userViewModel.Email && u.UserId != userViewModel.UserId);
+            if (emailExists)
+            {
+                ModelState.AddModelError("Email", "Email đã tồn tại trong hệ thống.");
+                ViewBag.ListRole = new SelectList(db.UserGroups.ToList(), "GroupId", "Name", userViewModel.GroupId);
+                return View(userViewModel);
+            }
+
             var userInDb = db.Users.SingleOrDefault(a => a.UserId == userViewModel.UserId);
             if (userInDb != null)
             {
@@ -167,7 +176,6 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                 }
 
                 db.SaveChanges();
-
                 TempData["SuccessMessage"] = "Cập nhật thông tin tài khoản thành công!";
                 return RedirectToAction("Show");
             }
@@ -177,6 +185,7 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             ModelState.AddModelError("", "Không tìm thấy tài khoản.");
             return View(userViewModel);
         }
+
 
 
         [HttpPost]

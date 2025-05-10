@@ -11,11 +11,9 @@ namespace WebsiteNoiThat.Models
     {
        
         [DisplayName("Tên đăng nhập")]
-        [Required(ErrorMessage = "Bạn phải nhập tài khoản!")]
         public string UserName { get; set; }
 
         [DisplayName("Mật khẩu")]
-        [Required(ErrorMessage = "Bạn phải nhập mật khẩu!")]
         public string Password { get; set; }
     }
 }

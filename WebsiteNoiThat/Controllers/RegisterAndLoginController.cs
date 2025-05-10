@@ -34,6 +34,25 @@ namespace WebsiteNoiThat.Controllers
         [HttpPost]
         public ActionResult Login(Models.LoginModel model)
         {
+            if (string.IsNullOrEmpty(model.UserName) && string.IsNullOrEmpty(model.Password))
+            {
+                // Nếu cả hai trường đều trống
+                ModelState.AddModelError("", "Vui lòng nhập tài khoản và mật khẩu");
+            }
+            else
+            {
+                // Nếu chỉ một trong hai trường trống
+                if (string.IsNullOrEmpty(model.UserName))
+                {
+                    ModelState.AddModelError("UserName", "Vui lòng nhập tên tài khoản");
+                }
+
+                if (string.IsNullOrEmpty(model.Password))
+                {
+                    ModelState.AddModelError("Password", "Vui lòng nhập mật khẩu");
+                }
+            }
+
             if (ModelState.IsValid)
             {
                 var dao = new UserDao();
@@ -82,10 +101,10 @@ namespace WebsiteNoiThat.Controllers
                 {
                     ModelState.AddModelError("", "Tên đăng nhập đã tồn tại");
                 }
-                //else if (dao.CheckEmail(model.Email))
-                //{
-                //    ModelState.AddModelError("", "Email đã tồn tại");
-                //}
+                else if (dao.CheckEmail(model.Email))
+                {
+                    ModelState.AddModelError("", "Email đã tồn tại");
+                }
                 else
                 {
                     var user = new User();

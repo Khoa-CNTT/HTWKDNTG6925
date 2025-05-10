@@ -23,7 +23,7 @@
                         <td>Đơn giá</td>
                         <td>Giảm giá</td>
                         <td>Thành tiền</td>
-                        <td>Trạng thái</td>
+                        @*<td>Trạng thái</td>*@
                         <td></td>
                     </tr>
                 </thead>
@@ -39,7 +39,9 @@
                             <td>@item.Product.Discount%</td>
                             <td>@string.Format("{0:#,###.##}", ((item.Product.Price - (item.Product.Price * item.Product.Discount * 0.01)) * item.Quantity))₫</td>
                             @*<td style="color:darkslategray">@ViewBag.Status</td>*@
-                            <td><a href="#" data-id="@item.Product.ProductId" class="btn btn-danger">Xoá</a></td>
+                        <td>
+                            <a href="#" data-id="@item.Product.ProductId" class="btn btn-danger btn-delete">Xoá</a>
+                        </td>
                         </tr>
                     }
                 </tbody>
