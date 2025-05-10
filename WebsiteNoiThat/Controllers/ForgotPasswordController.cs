@@ -56,7 +56,7 @@ namespace WebsiteNoiThat.Controllers
 
                 WebMail.Send(
                     to: user.Email,
-                    subject: "Khôi phục mật khẩu - Website Nội Thất",
+                    subject: "Khôi phục mật khẩu - Nội Thất Seven",
                     body: body,
                     isBodyHtml: true
                 );

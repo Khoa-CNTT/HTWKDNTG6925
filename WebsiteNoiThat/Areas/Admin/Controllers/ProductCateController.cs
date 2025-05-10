@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Data.Entity.Validation;
+using System.Linq;
 using System.Web.Mvc;
 using Models.DAO;
 using Models.EF;
@@ -25,84 +26,113 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             return View(db.Categories.ToList());
         }
 
-        [HttpGet]
-        [HasCredential(RoleId = "ADD_CATE")]
-        public ActionResult Add()
-        {
-            var session = (UserLogin)Session[Commoncontent.user_sesion_admin];
-            if (session == null) return RedirectToAction("Login", "Account"); // Redirect if session is null
-            ViewBag.username = session.Username;
+       [HttpGet]
+[HasCredential(RoleId = "ADD_CATE")]
+public ActionResult Add()
+{
+    var session = (UserLogin)Session[Commoncontent.user_sesion_admin];
+    if (session == null) return RedirectToAction("Login", "Account");
 
-            ViewBag.ParId = new SelectList(db.Categories, "CategoryId", "Name");
-            return View();
-        }
+    ViewBag.username = session.Username;
+    LoadParIdDropDown();
+    return View();
+}
 
-        [HttpPost]
-        [HasCredential(RoleId = "ADD_CATE")]
-        public ActionResult Add(Category n)
-        {
-            // Kiểm tra CategoryId
-            if (n.CategoryId == 0)
-            {
-                ModelState.AddModelError("CateError", "Mã không được để trống.");
-            }
-            else if (n.CategoryId <= 0)
-            {
-                ModelState.AddModelError("CateError", "Mã phải là số nguyên dương.");
-            }
-            else if (db.Categories.Any(a => a.CategoryId == n.CategoryId))
-            {
-                ModelState.AddModelError("CateError", "Mã đã tồn tại trong hệ thống.");
-            }
+[HttpPost]
+[HasCredential(RoleId = "ADD_CATE")]
+[ValidateAntiForgeryToken]
+public ActionResult Add(Category n)
+{
+    // Kiểm tra CategoryId
+    if (n.CategoryId == 0)
+    {
+        ModelState.AddModelError("CateError", "Mã không được để trống.");
+    }
+    else if (n.CategoryId <= 0)
+    {
+        ModelState.AddModelError("CateError", "Mã phải là số nguyên dương.");
+    }
+    else if (db.Categories.Any(a => a.CategoryId == n.CategoryId))
+    {
+        ModelState.AddModelError("CateError", "Mã đã tồn tại trong hệ thống.");
+    }
 
-            // Kiểm tra ModelState
-            if (!ModelState.IsValid)
-            {
-                ViewBag.ParId = new SelectList(db.Categories, "CategoryId", "Name");
-                return View(n); // Trả lại dữ liệu đã nhập cùng với các lỗi
-            }
+    // Nếu không chọn danh mục cha → ParId là 0
+    if (!n.ParId.Equals(0) && !db.Categories.Any(c => c.CategoryId == n.ParId))
+    {
+        ModelState.AddModelError("ParId", "Danh mục cha không tồn tại.");
+    }
 
-            // Nếu không có lỗi, thêm vào cơ sở dữ liệu
-            db.Categories.Add(n);
-            db.SaveChanges();
-            return RedirectToAction("Show");
-        }
+    if (!ModelState.IsValid)
+    {
+        LoadParIdDropDown();
+        return View(n);
+    }
+
+    db.Categories.Add(n);
+    db.SaveChanges();
+    return RedirectToAction("Show");
+}
+
+private void LoadParIdDropDown()
+{
+    var categories = db.Categories.Select(c => new
+    {
+        c.CategoryId,
+        c.Name
+    }).ToList();
+
+    var list = categories
+        .Select(c => new SelectListItem { Value = c.CategoryId.ToString(), Text = c.Name })
+        .ToList();
+
+    // Thêm tùy chọn mặc định đầu tiên
+    list.Insert(0, new SelectListItem { Value = "0", Text = "Không có danh mục cha" });
+
+    ViewBag.ParId = new SelectList(list, "Value", "Text");
+}
+
 
         [HttpGet]
         [HasCredential(RoleId = "EDIT_CATE")]
         public ActionResult Edit(int CategoryId)
         {
             var session = (UserLogin)Session[Commoncontent.user_sesion_admin];
-            if (session == null) return RedirectToAction("Login", "Account"); // Redirect if session is null
+            if (session == null) return RedirectToAction("Login", "Account");
             ViewBag.username = session.Username;
 
             // Lấy thông tin danh mục cần sửa
             Category a = db.Categories.SingleOrDefault(n => n.CategoryId == CategoryId);
-            if (a == null) return HttpNotFound(); // Return 404 if not found
+            if (a == null) return HttpNotFound();
 
-            // Tạo danh sách cho ParId
-            ViewBag.ParId = new SelectList(db.Categories, "CategoryId", "Name", a.ParId); // Chọn danh mục cha hiện tại
+            LoadParIdDropDown(); // Tải dropdown với giá trị mặc định ParId = 0
 
             return View(a);
         }
+
         [HttpPost]
         [HasCredential(RoleId = "EDIT_CATE")]
+        [ValidateAntiForgeryToken]
         public ActionResult Edit(Category n)
         {
-
-
-            // Kiểm tra ModelState
-            if (!ModelState.IsValid)
+            // Nếu không chọn danh mục cha (giá trị từ dropdown là "0"), gán ParId = 0
+            if (n.ParId == null || n.ParId < 0)
             {
-                ViewBag.ParId = new SelectList(db.Categories, "CategoryId", "Name", n.ParId); // Giữ lại giá trị đã chọn
-                return View(n); // Trả lại dữ liệu đã nhập cùng với các lỗi
+                n.ParId = 0;
             }
 
-            // Nếu không có lỗi, sửa đổi thông tin danh mục trong cơ sở dữ liệu
+            if (!ModelState.IsValid)
+            {
+                LoadParIdDropDown();
+                return View(n);
+            }
+
+            // Cập nhật danh mục
             db.Entry(n).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Show");
         }
+
 
         [HttpPost]
         [HasCredential(RoleId = "DELETE_CATE")]
