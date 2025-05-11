@@ -18,7 +18,10 @@ namespace WebsiteNoiThat.Controllers
     {
         // GET: RegisterAndLogin
         DBNoiThat db = new DBNoiThat();
-
+        public ActionResult Error()
+        {
+            return View();
+        }
         public ActionResult Logout()
         {
             Session[Commoncontent.user_sesion] = null;

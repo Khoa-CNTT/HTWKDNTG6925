@@ -3159,6 +3159,7 @@
     <Content Include="Views\Cart\tai_khoan_bi_khoa.cshtml" />
     <Content Include="Views\News\View.cshtml" />
     <Content Include="Views\ForgotPassword\Index.cshtml" />
+    <Content Include="Views\RegisterAndLogin\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
