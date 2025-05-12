@@ -1,11 +1,14 @@
 ﻿
 
 @model  Models.EF.Product
-
-
 <style>
-    .zoom{transition:transform .2s;}
-    .zoom:hover{transform: scale(1.1);}
+    .zoom {
+        transition: transform .2s;
+    }
+
+        .zoom:hover {
+            transform: scale(1.1);
+        }
 </style>
 @section Noidungbenphai{
     <table class="chitietsp">
@@ -40,6 +43,21 @@
             }
         </tr>
         <tr>
+            @if (Model.Length > 0 && Model.Width > 0 && Model.Height > 0)
+            {
+                <td>
+                    <p class="status">
+                        Kích thước:
+                        <span class="pink">
+                            Dài @(Model.Length % 1 == 0 ? $"{Model.Length:0}m" : $"{Model.Length:0.0}m"),
+                            Rộng @(Model.Width % 1 == 0 ? $"{Model.Width:0}m" : $"{Model.Width:0.0}m"),
+                            Cao @(Model.Height % 1 == 0 ? $"{Model.Height:0}m" : $"{Model.Height:0.0}m")
+                        </span>
+                    </p>
+                </td>
+            }
+        </tr>
+        <tr>
             <td>
                 <p class="status">Giá: <span class="pink">@string.Format("{0:#,###.##}", Model.Price)₫</span></p>
                 @{
@@ -56,24 +74,32 @@
                 }
             </td>
         </tr>
-
-
-        <tr>
-            <td>
-                <div class="form-group">
-                    @if (Model.Quantity > 0)
-                    {
-                        <a style="font-family:unset;" href="/them-gio-hang?productid=@Model.ProductId&quantity=1" class="btn btn-primary fa fa-cart-plus"> Đặt mua hàng</a>
-                    }
-                    else
-                    {
-                        <button class="btn btn-secondary" disabled>Đã bán hết sản phẩm</button>
-                    }
-                </div>
-            </td>
-        </tr>
+        @*<tr>
+                <td>
+                    <div class="form-group">
+                        @if (Model.Quantity > 0)
+                        {
+                            <a style="font-family:unset;" href="/them-gio-hang?productid=@Model.ProductId&quantity=1" class="btn btn-primary fa fa-cart-plus"> Đặt mua hàng</a>
+                        }
+                        else
+                        {
+                            <button class="btn btn-secondary" disabled>Đã bán hết sản phẩm</button>
+                        }
+                    </div>
+                </td>
+            </tr>*@
 
     </table>
+    <div style="text-align: center; margin-top: 20px;">
+        @if (Model.Quantity > 0)
+        {
+            <a href="/them-gio-hang?productid=@Model.ProductId&quantity=1" class="btn btn-primary fa fa-cart-plus" style="font-size: 18px;"> Đặt mua hàng</a>
+        }
+        else
+        {
+            <button class="btn btn-secondary" disabled style="font-size: 18px;">Đã bán hết sản phẩm</button>
+        }
+    </div>
 }
 <hr>
 <div class="row">
@@ -97,7 +123,7 @@
                         <font><strong>I. Vận chuyển/ shipping</strong></font>
                     </p>
                     <p>
-                        <font ><strong>A. Gói tiết kiệm:</strong> </font><br>
+                        <font><strong>A. Gói tiết kiệm:</strong> </font><br>
                         <br>
                         - Địa điểm: nơi xe tải 2 tấn (hẻm rộng &gt; 5m) có thể vào được.
                     </p>
@@ -105,7 +131,7 @@
                         - Đưa hàng nặng, cồng kềnh lên lầu cao ( hoặc chung cư bằng thang bộ): Quý Khách xin vui lòng sử dụng gói giao theo yêu cầu ở dưới đây<br>
                         - Thời gian giao hàng: trong vòng 5 ngày đối với nội thành ( 12 ngày đối với ngoại tỉnh) kể từ ngày xác nhận đơn hàng. Bộ phận giao hàng sẽ thông báo giờ giao hàng trước 1 ngày. <br>
                         <br>
-                        <strong><font >B. Gói dịch vụ: </font></strong><br>
+                        <strong><font>B. Gói dịch vụ: </font></strong><br>
                         - Địa điểm giao hàng: đường cấm xe tải, vào hẻm nhỏ, hoặc khiêng vác lên tầng lầu cao cần ít nhất 2 người.
                     </p>
                     <p>
@@ -115,7 +141,7 @@
                         &nbsp;
                     </p>
                     <p>
-                        <font ><strong>2. Lắp ráp/ installation</strong></font>
+                        <font><strong>2. Lắp ráp/ installation</strong></font>
                     </p>
                     <p>
                         - Giá vận chuyển trên đây đã gồm kèm dịch vụ lắp ráp miễn phí đối với các thành phố có kho trung chuyển.
@@ -210,14 +236,14 @@
 </div>
 
 @*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#zoom_04").ezPlus();
-    });
-</script>*@
-<hr/>
-<div class="boxmain" >
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#zoom_04").ezPlus();
+        });
+    </script>*@
+<hr />
+<div class="boxmain">
     @Html.Action("NewProduct", "Product")
     @Html.Action("CateKorea", "Product")
     @Html.Action("CateHavana", "Product")

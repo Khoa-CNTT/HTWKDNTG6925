@@ -37,5 +37,11 @@ namespace WebsiteNoiThat.Areas.Admin.Models
         [System.ComponentModel.DataAnnotations.Schema.Column(TypeName = "date")]
         [DisplayName("Ngày cập nhật")]
         public DateTime? UpdateDate { get; set; }
+        [DisplayName("Chiều dài")]
+        public decimal Length { get; set; }
+        [DisplayName("Chiều rộng")]
+        public decimal Width { get; set; }
+        [DisplayName("Chiều cao")]
+        public decimal Height { get; set; }
     }
 }

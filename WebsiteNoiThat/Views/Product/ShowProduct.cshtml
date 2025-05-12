@@ -25,6 +25,7 @@
                             <a href="">@sp.Name</a>
                         </div>
                         <div class="pricesp">Giá: @sp.Price.GetValueOrDefault(0).ToString("N0")₫</div>
+                       
                         @if (sp.Discount > 0)
                         {
                             <div class="pricesp" style="color:crimson">Giảm @sp.Discount%: @string.Format("{0:#,###.##}", (sp.Price - (sp.Price * sp.Discount * 0.01)))₫</div>

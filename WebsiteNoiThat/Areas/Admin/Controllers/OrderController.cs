@@ -49,7 +49,10 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                              UpdateDate = a.UpdateDate,
                              StatusId = a.StatusId,
                              StatusName = d.Name,
-                             UserId = a.UserId
+                             UserId = a.UserId,
+                             Length = c.Length,
+                             Width = c.Width,
+                             Height = c.Height
                          }).ToList();
 
             ViewBag.Status = db.Status.ToList();
@@ -144,6 +147,9 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                               Quantity = a.Quantity,
                               Discount = c.Discount,
                               UpdateDate = b.UpdateDate,
+                              Length = c.Length,
+                              Width = c.Width,
+                              Height = c.Height
 
                           }).ToList();
             var total = 0;
@@ -183,7 +189,10 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                              UpdateDate = a.UpdateDate,
                              StatusId = a.StatusId,
                              StatusName = d.Name,
-                             UserId = a.UserId
+                             UserId = a.UserId,
+                             Length = c.Length,
+                             Width = c.Width,
+                             Height = c.Height
                          }).ToList();
             foreach (OrderViewModel item in model)
             {
@@ -217,7 +226,10 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                              UpdateDate = a.UpdateDate,
                              StatusId = a.StatusId,
                              StatusName = d.Name,
-                             UserId = a.UserId
+                             UserId = a.UserId,
+                             Length = c.Length,
+                             Width = c.Width,
+                             Height = c.Height
 
                          }).ToList();
 
@@ -261,7 +273,10 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                                      ProductName = c.Name,
                                      Quantity = a.Quantity,
                                      Price = a.Price,
-                                     ProductId = c.ProductId
+                                     ProductId = c.ProductId,
+                                     Length = c.Length,
+                                     Width = c.Width,
+                                     Height = c.Height
                                  }
                          ).Where(o => o.OrderId == order.OrderId).ToList();
                 ViewBag.orderproducts = orderproducts;
@@ -360,7 +375,10 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                                      ProductName = c.Name,
                                      Quantity = a.Quantity,
                                      Price = a.Price,
-                                     ProductId = c.ProductId
+                                     ProductId = c.ProductId,
+                                     Length = c.Length,
+                                     Width = c.Width,
+                                     Height = c.Height
                                  }
                          ).Where(o => o.OrderId == order.OrderId).ToList();
                 ViewBag.orderproducts = orderproducts;

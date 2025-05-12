@@ -44,41 +44,26 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             return View(productViewModels);
         }
 
+        private void LoadViewBags(object selectedCateId = null, object selectedProviderId = null)
+        {
+            ViewBag.ListCate = new SelectList(db.Categories.ToList(), "CategoryId", "Name", selectedCateId);
+            ViewBag.ListProvider = new SelectList(db.Providers.ToList(), "ProviderId", "Name", selectedProviderId);
+        }
+
         [HttpGet]
         [HasCredential(RoleId = "ADD_PRODUCT")]
         public ActionResult Add()
         {
-            ViewBag.ListCate = new SelectList(db.Categories.ToList(), "CategoryId", "Name");
-            ViewBag.ListProvider = new SelectList(db.Providers.ToList(), "ProviderId", "Name");
+            LoadViewBags();
             return View();
         }
 
         [HttpPost]
         [HasCredential(RoleId = "ADD_PRODUCT")]
-        public ActionResult Add(ProductViewModel n, HttpPostedFileBase UploadImage)
+        public ActionResult Add(ProductViewModel model, HttpPostedFileBase UploadImage)
         {
-            ViewBag.ListCate = new SelectList(db.Categories.ToList(), "CategoryId", "Name");
-            ViewBag.ListProvider = new SelectList(db.Providers.ToList(), "ProviderId", "Name");
-
-            // Kiểm tra logic ngày khuyến mãi
-            if (n.Discount > 0)
-            {
-                if (!n.StartDate.HasValue || !n.EndDate.HasValue)
-                {
-                    ModelState.AddModelError("", "Vui lòng nhập đầy đủ ngày bắt đầu và kết thúc khi có khuyến mãi.");
-                }
-                else if (n.StartDate > n.EndDate)
-                {
-                    ModelState.AddModelError("", "Ngày bắt đầu khuyến mãi phải nhỏ hơn ngày kết thúc.");
-                }
-            }
-            else
-            {
-                if (n.StartDate.HasValue || n.EndDate.HasValue)
-                {
-                    ModelState.AddModelError("", "Không được nhập ngày nếu không có khuyến mãi.");
-                }
-            }
+            LoadViewBags(model.CateId, model.ProviderId);
+            ValidateDiscountDates(model);
 
             if (ModelState.IsValid)
             {
@@ -88,33 +73,35 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                     fileName = Path.GetFileName(UploadImage.FileName);
                     string path = Path.Combine(Server.MapPath("~/image"), fileName);
                     UploadImage.SaveAs(path);
-                    n.Photo = fileName;
                 }
 
                 var product = new Product
                 {
-                    Name = n.Name,
-                    Description = n.Description,
-                    Price = n.Price,
-                    Quantity = n.Quantity,
+                    Name = model.Name,
+                    Description = model.Description,
+                    Price = model.Price,
+                    Quantity = model.Quantity,
                     Photo = fileName,
-                    Discount = n.Discount,
-                    StartDate = n.StartDate,
-                    EndDate = n.EndDate,
-                    ProviderId = n.ProviderId,
-                    CateId = n.CateId
+                    Discount = model.Discount,
+                    StartDate = model.StartDate,
+                    EndDate = model.EndDate,
+                    ProviderId = model.ProviderId,
+                    CateId = model.CateId,
+                    Length = model.Length,
+                    Width = model.Width,
+                    Height = model.Height
                 };
 
                 db.Products.Add(product);
                 db.SaveChanges();
-                return RedirectToAction("Show");
+
+                TempData["Success"] = "Thêm sản phẩm thành công!";
+                return RedirectToAction("Show", new { CateId = model.CateId });
             }
 
-            return View(n);
+            TempData["Error"] = "Thêm sản phẩm thất bại!";
+            return View(model);
         }
-
-
-
 
         [HttpGet]
         [HasCredential(RoleId = "EDIT_PRODUCT")]
@@ -123,97 +110,111 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             var session = (UserLogin)Session[WebsiteNoiThat.Common.Commoncontent.user_sesion_admin];
             ViewBag.username = session.Username;
 
-            var model = (from a in db.Products
-                         where a.ProductId == ProductId
-                         select new ProductViewModel
-                         {
-                             ProductId = a.ProductId,
-                             Name = a.Name,
-                             Description = a.Description,
-                             Discount = a.Discount,
-                             Price = a.Price,
-                             Quantity = a.Quantity,
-                             StartDate = a.StartDate,
-                             EndDate = a.EndDate,
-                             Photo = a.Photo,
-                             ProviderId = a.ProviderId,
-                             CateId = a.CateId
-                         }).FirstOrDefault();
+            var model = db.Products.Where(p => p.ProductId == ProductId)
+                .Select(p => new ProductViewModel
+                {
+                    ProductId = p.ProductId,
+                    Name = p.Name,
+                    Description = p.Description,
+                    Discount = p.Discount,
+                    Price = p.Price,
+                    Quantity = p.Quantity,
+                    StartDate = p.StartDate,
+                    EndDate = p.EndDate,
+                    Photo = p.Photo,
+                    ProviderId = p.ProviderId,
+                    CateId = p.CateId,
+                    Length = p.Length,
+                    Width = p.Width,
+                    Height = p.Height
+                }).FirstOrDefault();
 
-            ViewBag.ListCate = new SelectList(db.Categories.ToList(), "CategoryId", "Name", model.CateId);
-            ViewBag.ListProvider = new SelectList(db.Providers.ToList(), "ProviderId", "Name", model.ProviderId);
+            if (model == null)
+            {
+                TempData["Error"] = "Không tìm thấy sản phẩm!";
+                return RedirectToAction("Index");
+            }
 
+            LoadViewBags(model.CateId, model.ProviderId);
             return View(model);
         }
 
         [HttpPost]
         [HasCredential(RoleId = "EDIT_PRODUCT")]
-        public ActionResult Edit(ProductViewModel n, HttpPostedFileBase UploadImage)
+        public ActionResult Edit(ProductViewModel model, HttpPostedFileBase UploadImage)
         {
             var session = (UserLogin)Session[WebsiteNoiThat.Common.Commoncontent.user_sesion_admin];
             ViewBag.username = session.Username;
 
-            ViewBag.ListCate = new SelectList(db.Categories.ToList(), "CategoryId", "Name", n.CateId);
-            ViewBag.ListProvider = new SelectList(db.Providers.ToList(), "ProviderId", "Name", n.ProviderId);
-            if (n.Discount > 0)
+            LoadViewBags(model.CateId, model.ProviderId);
+            ValidateDiscountDates(model);
+
+            if (ModelState.IsValid)
             {
-                if (!n.StartDate.HasValue || !n.EndDate.HasValue)
+                var product = db.Products.FirstOrDefault(p => p.ProductId == model.ProductId);
+                if (product != null)
                 {
-                    ModelState.AddModelError("", "Vui lòng nhập đầy đủ ngày bắt đầu và kết thúc khi có khuyến mãi.");
+                    product.Name = model.Name;
+                    product.Description = model.Description;
+                    product.Price = model.Price;
+                    product.Quantity = model.Quantity;
+                    product.Discount = model.Discount;
+                    product.StartDate = model.StartDate;
+                    product.EndDate = model.EndDate;
+                    product.ProviderId = model.ProviderId;
+                    product.CateId = model.CateId;
+                    product.Length = model.Length;
+                    product.Width = model.Width;
+                    product.Height = model.Height;
+
+                    if (UploadImage != null)
+                    {
+                        if (!string.IsNullOrEmpty(product.Photo))
+                        {
+                            var oldImagePath = Path.Combine(Server.MapPath("~/image"), product.Photo);
+                            if (System.IO.File.Exists(oldImagePath))
+                                System.IO.File.Delete(oldImagePath);
+                        }
+
+                        string fileName = Path.GetFileName(UploadImage.FileName);
+                        string path = Path.Combine(Server.MapPath("~/image"), fileName);
+                        UploadImage.SaveAs(path);
+                        product.Photo = fileName;
+                    }
+
+                    db.SaveChanges();
+                    TempData["Success"] = "Cập nhật sản phẩm thành công!";
+                    return RedirectToAction("Show", new { CateId = model.CateId });
                 }
-                else if (n.StartDate > n.EndDate)
+
+                TempData["Error"] = "Không tìm thấy sản phẩm để cập nhật!";
+            }
+
+            return View(model);
+        }
+
+        private void ValidateDiscountDates(ProductViewModel model)
+        {
+            if (model.Discount > 0)
+            {
+                if (!model.StartDate.HasValue || !model.EndDate.HasValue)
+                {
+                    ModelState.AddModelError("", "Vui lòng nhập ngày bắt đầu và kết thúc khi có khuyến mãi.");
+                }
+                else if (model.StartDate > model.EndDate)
                 {
                     ModelState.AddModelError("", "Ngày bắt đầu khuyến mãi phải nhỏ hơn ngày kết thúc.");
                 }
             }
             else
             {
-                if (n.StartDate.HasValue || n.EndDate.HasValue)
+                if (model.StartDate.HasValue || model.EndDate.HasValue)
                 {
                     ModelState.AddModelError("", "Không được nhập ngày nếu không có khuyến mãi.");
                 }
             }
-            if (ModelState.IsValid)
-            {
-                var model = db.Products.FirstOrDefault(m => m.ProductId == n.ProductId);
-                if (model != null)
-                {
-                    model.Name = n.Name;
-                    model.Description = n.Description;
-                    model.Price = n.Price;
-                    model.Quantity = n.Quantity;
-                    model.Discount = n.Discount;
-                    model.ProviderId = n.ProviderId;
-                    model.CateId = n.CateId;
-                    model.StartDate = n.StartDate;
-                    model.EndDate = n.EndDate;
-
-                    if (UploadImage != null)
-                    {
-                        // Xóa ảnh cũ nếu có
-                        if (!string.IsNullOrEmpty(model.Photo))
-                        {
-                            var oldImagePath = Path.Combine(Server.MapPath("~/image"), model.Photo);
-                            if (System.IO.File.Exists(oldImagePath))
-                            {
-                                System.IO.File.Delete(oldImagePath);
-                            }
-                        }
-
-                        // Lưu ảnh mới
-                        string fileName = Path.GetFileName(UploadImage.FileName);
-                        string path = Path.Combine(Server.MapPath("~/image"), fileName);
-                        UploadImage.SaveAs(path);
-                        model.Photo = fileName; // Gán tên file ảnh mới
-                    }
-
-                    db.SaveChanges();
-                    return RedirectToAction("Show", new { CateId = n.CateId });
-                }
-            }
-
-            return View(n); // Trả lại view với model nếu có lỗi
         }
+
 
 
 

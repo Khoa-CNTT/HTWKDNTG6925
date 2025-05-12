@@ -47,6 +47,12 @@
         [DisplayName("Giảm giá (%)")]
         public int? Discount { get; set; }
         public bool IsVisible { get; set; }
+        [DisplayName("Chiều dài")]
+        public decimal Length { get; set; }
+        [DisplayName("Chiều rộng")]
+        public decimal Width { get; set; }
+        [DisplayName("Chiều cao")]
+        public decimal Height { get; set; }
 
     }
 }

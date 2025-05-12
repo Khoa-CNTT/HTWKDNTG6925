@@ -41,6 +41,7 @@
                 <th scope="col">Mã sản phẩm</th>
                 <th scope="col">Tên sản phẩm</th>
                 <th scope="col">Số lượng</th>
+                <th scope="col">Kích thước (Dài x Rộng x Cao)</th>
                 <th scope="col">Giá (đã KM nếu có)</th>
             </tr>
         </thead>
@@ -52,7 +53,15 @@
                     <td scope="row">@p.ProductId</td>
                     <td>@p.ProductName</td>
                     <td>@p.Quantity</td>
-                    <td>@p.Price₫</td>
+                    <td>
+                        @{
+                            string lengthStr = (p.Length % 1 == 0) ? $"{(int)p.Length}m" : $"{p.Length:0.##}m";
+                            string widthStr = (p.Width % 1 == 0) ? $"{(int)p.Width}m" : $"{p.Width:0.##}m";
+                            string heightStr = (p.Height % 1 == 0) ? $"{(int)p.Height}m" : $"{p.Height:0.##}m";
+                        }
+                        @($"{lengthStr} x {widthStr} x {heightStr}")
+                    </td>
+                    <td>@string.Format("{0:N0}đ", p.Price)</td>
                 </tr>
             }
                 <tr>

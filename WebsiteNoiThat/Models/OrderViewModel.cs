@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -33,7 +34,12 @@ namespace WebsiteNoiThat.Models
         public int? Quantity { get; set; }
         [StringLength(50)]
         public int? Discount { get; set; }
-       
+        [DisplayName("Chiều dài")]
+        public decimal Length { get; set; }
+        [DisplayName("Chiều rộng")]
+        public decimal Width { get; set; }
+        [DisplayName("Chiều cao")]
+        public decimal Height { get; set; }
 
     }
 }

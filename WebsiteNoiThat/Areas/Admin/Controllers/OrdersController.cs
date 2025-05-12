@@ -34,8 +34,8 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                              ShipPhone = a.ShipPhone,
                              StatusName = b.Name,
                              UpdateDate = a.UpdateDate,
-                             UserId = a.UserId,
-
+                             UserId = a.UserId
+                             
                          }
                          ).ToList();
             return View(model);
@@ -60,20 +60,21 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
             else
             {
                 var orderproducts = (
-                                 from a in db.OrderDetails
-                                 join b in db.Orders
-                                 on a.OrderId equals b.OrderId
-                                 join c in db.Products
-                                 on a.ProductId equals c.ProductId
-                                 select new OrderProduct
-                                 {
-                                     OrderId = a.OrderId,
-                                     ProductName = c.Name,
-                                     Quantity = a.Quantity,
-                                     Price = a.Price,
-                                     ProductId = c.ProductId
-                                 }
-                         ).Where(o => o.OrderId == order.OrderId).ToList();
+            from a in db.OrderDetails
+            join b in db.Orders on a.OrderId equals b.OrderId
+            join c in db.Products on a.ProductId equals c.ProductId
+            select new OrderProduct
+            {
+                OrderId = a.OrderId,
+                ProductName = c.Name,
+                Quantity = a.Quantity,
+                Price = a.Price,
+                ProductId = c.ProductId,
+                Length = c.Length,
+                Width = c.Width,
+                Height = c.Height
+            }).Where(o => o.OrderId == order.OrderId).ToList();
+
                 ViewBag.orderproducts = orderproducts;
 
                 double? total = 0;

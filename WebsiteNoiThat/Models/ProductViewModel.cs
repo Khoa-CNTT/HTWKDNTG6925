@@ -21,6 +21,7 @@ namespace WebsiteNoiThat.Models
         public string Name { get; set; }
 
         [DisplayName("Mô tả sản phẩm")]
+        [Required(ErrorMessage = "Nhập mô tả")]
         [StringLength(500, ErrorMessage = "Mô tả không được quá 500 ký tự.")]
         public string Description { get; set; }
 
@@ -61,9 +62,19 @@ namespace WebsiteNoiThat.Models
 
 
         [DisplayName("Giảm giá (%)")]
+        [Required(ErrorMessage = "Vui lòng nhập giảm giá")]
         [Range(0, 100, ErrorMessage = "Giảm giá phải trong khoảng từ 0 đến 100.")]
         public int? Discount { get; set; }
         public bool IsVisible { get; set; }
+        [DisplayName("Chiều dài")]
+        [Required(ErrorMessage = "Nhập chiều dài")]
+        public decimal Length { get; set; }
+        [DisplayName("Chiều rộng")]
+        [Required(ErrorMessage = "Nhập chiều rộng")]
+        public decimal Width { get; set; }
+        [DisplayName("Chiều cao")]
+        [Required(ErrorMessage = "Nhập chiều cao")]
+        public decimal Height { get; set; }
 
     }
 }
