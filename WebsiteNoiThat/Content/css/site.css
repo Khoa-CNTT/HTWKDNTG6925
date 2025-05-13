@@ -101,8 +101,11 @@
         font-weight: bold;
     }
 
-    #footerNew .ct-boxft1New p, #footerNew .ct-boxft1New ul {
+    #footerNew .ct-boxft1New p,
+    #footerNew .ct-boxft1New ul {
         font-size: 14px;
+        margin: 0;
+        padding: 0;
     }
 
     #footerNew .ct-boxft1New a {
@@ -114,37 +117,42 @@
             text-decoration: underline;
         }
 
-    #footerNew .social-linksNew li {
+    #footerNew .support-links {
         list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
     }
 
-    #footerNew .social-linksNew a {
-        color: #fff;
-        font-size: 16px;
-        text-decoration: none;
-    }
-
-        #footerNew .social-linksNew a:hover {
-            text-decoration: underline;
+        #footerNew .support-links li {
+            margin-bottom: 10px;
         }
 
-    #footerNew .social-linksNew i {
-        margin-right: 8px;
-    }
+        #footerNew .support-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
 
-    /* Hỗ trợ: Sử dụng Flexbox để hiển thị các liên kết trên cùng một dòng */
+            #footerNew .support-links a:hover {
+                text-decoration: underline;
+            }
+
+
+        #footerNew .social-linksNew i {
+            margin-right: 8px;
+        }
+
+     /*Hỗ trợ - hiển thị các liên kết theo chiều dọc */
     #footerNew .ct-boxft1New .support-links {
-        display: flex;
-        justify-content: space-between;
+        list-style: disc;
         padding: 0;
-        list-style: none;
-        flex-wrap: nowrap; 
+        margin: 0;
+        text-align: center;
     }
 
         #footerNew .ct-boxft1New .support-links li {
-            flex: 1;
-            text-align: center;
-            white-space: nowrap; 
+            margin-bottom: 10px;
         }
 
 /* Responsive */
@@ -154,8 +162,7 @@
     }
 
     #footerNew .ct-boxft1New .support-links {
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
         #footerNew .ct-boxft1New .support-links li {

@@ -3187,6 +3187,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\client\" />
+    <Folder Include="Views\GeminiApi\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
