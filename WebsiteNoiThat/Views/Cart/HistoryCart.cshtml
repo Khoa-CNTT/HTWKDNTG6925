@@ -41,18 +41,27 @@
                             @*<td>@item.Price.GetValueOrDefault(0).ToString("N0")₫</td>*@
 
                             @*@if(item.Discount>0 && item.EndDate>DateTime.Now)*@
-                            @if(item.Discount>0)
+                            @if (item.Discount > 0)
                             {
-                              <td style="color:crimson">@item.Discount %</td>
+                                <td style="color:crimson">@item.Discount %</td>
                             }
                             else
 
                             {
                                 <td>Không</td>
                             }
-                        <td>@string.Format("{0:#,###.##}", ((item.Price - (item.Price * item.Discount * 0.01)) * item.Quantity))₫</td>
+                            <td>@string.Format("{0:#,###.##}", (item.Price * item.Quantity))₫</td>
                             <td style="color:darkslategray">@item.NameStatus</td>
-                            <td><a href="/Cart/DeleteItem?id=@item.OrderDetaiId" data-id="@item.ProductId" class="btn btn-outline-danger">Hủy đơn hàng</a></td>
+                            <td>
+                                @if (item.StatusId != 3) 
+                                {
+                                    <a href="/Cart/DeleteItem?id=@item.OrderDetaiId" data-id="@item.ProductId">Hủy đơn hàng</a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Đã hủy</span>
+                                }
+                            </td>
                         </tr>
                     }
                 </tbody>

@@ -194,9 +194,9 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
                              Width = c.Width,
                              Height = c.Height
                          }).ToList();
-            foreach (OrderViewModel item in model)
+            foreach (OrderViewModel item in model.Where(x => x.StatusId != 3))
             {
-                total = total + Convert.ToInt32((item.Quantity * item.Price));
+                total += Convert.ToInt32(item.Quantity * item.Price);
             }
             ViewBag.total = total;
 
@@ -235,11 +235,12 @@ namespace WebsiteNoiThat.Areas.Admin.Controllers
 
             var model = models.Where(n => n.UpdateDate >= dfr && n.UpdateDate <= dto).ToList();
             var total = 0;
-            foreach (OrderViewModel item in model)
+            foreach (OrderViewModel item in model.Where(x => x.StatusId != 3))
             {
-                total = total + Convert.ToInt32((item.Quantity * item.Price));
+                total += Convert.ToInt32(item.Quantity * item.Price);
             }
             ViewBag.total = total;
+
             return View(model);
         }
 

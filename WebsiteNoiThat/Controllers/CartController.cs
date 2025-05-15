@@ -63,11 +63,27 @@ namespace WebsiteNoiThat.Controllers
         public ActionResult DeleteItem(long id)
         {
             var model = db.OrderDetails.SingleOrDefault(n => n.OrderDetailId == id);
-            var order = db.Orders.SingleOrDefault(o => o.OrderId == model.OrderId);
-
-            if (order.StatusId == 1 || order.StatusId == 2)
+            if (model == null)
             {
-                db.OrderDetails.Remove(model);
+                return HttpNotFound();
+            }
+
+            var order = db.Orders.SingleOrDefault(o => o.OrderId == model.OrderId);
+            if (order == null)
+            {
+                return HttpNotFound();
+            }
+
+            if (order.StatusId == 1 || order.StatusId == 2) // Chỉ cho huỷ khi đang xử lý hoặc mới đặt
+            {
+                // Hoàn trả số lượng sản phẩm về kho
+                var product = db.Products.SingleOrDefault(p => p.ProductId == model.ProductId);
+                if (product != null)
+                {
+                    product.Quantity += model.Quantity; // Cộng lại số lượng vào kho
+                }
+
+                order.StatusId = 3; // Gán trạng thái huỷ
                 db.SaveChanges();
             }
             else
@@ -77,6 +93,8 @@ namespace WebsiteNoiThat.Controllers
 
             return RedirectToAction("HistoryCart");
         }
+
+
         public JsonResult Update(string cartModel)
         {
             var jsonCart = new JavaScriptSerializer().Deserialize<List<CartItem>>(cartModel);
