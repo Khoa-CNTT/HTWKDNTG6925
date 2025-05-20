@@ -22,7 +22,7 @@ namespace WebsiteNoiThat.Models
 
         [DisplayName("Mô tả sản phẩm")]
         [Required(ErrorMessage = "Nhập mô tả")]
-        [StringLength(500, ErrorMessage = "Mô tả không được quá 500 ký tự.")]
+        [StringLength(10000, ErrorMessage = "Mô tả không quá ký tự.")]
         public string Description { get; set; }
 
         [DisplayName("Đơn giá")]
