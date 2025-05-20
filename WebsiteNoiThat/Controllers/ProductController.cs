@@ -172,24 +172,38 @@ namespace WebsiteNoiThat.Controllers
         {
             int pagenumber = (page ?? 1);
             int pagesize = 16;
+
             var model = (from a in db.Products
                          join b in db.OrderDetails on a.ProductId equals b.ProductId
-                         group b by new { a.Description, a.ProductId, a.Photo, a.Price, a.Discount, a.EndDate, a.StartDate }
-                         into g
+                         group b by new
+                         {
+                             a.ProductId,
+                             a.Name, 
+                             a.Description,
+                             a.Photo,
+                             a.Price,
+                             a.Discount,
+                             a.EndDate,
+                             a.StartDate
+                         } into g
                          select new ProductView
                          {
-                             Description = g.Key.Description,
                              ProductId = g.Key.ProductId,
+                             Name = g.Key.Name, 
+                             Description = g.Key.Description,
+                             Photo = g.Key.Photo,
                              Price = g.Key.Price,
                              Discount = g.Key.Discount,
                              StartDate = g.Key.StartDate,
                              EndDate = g.Key.EndDate,
-                             Photo = g.Key.Photo,
-                             Quantity = g.Sum(s => s.Quantity),
+                             Quantity = g.Sum(s => s.Quantity)
+                         })
+                         .OrderByDescending(n => n.Quantity)
+                         .ToPagedList(pagenumber, pagesize);
 
-                         }).OrderByDescending(n => n.Quantity).ToPagedList(pagenumber, pagesize);
             return View(model);
         }
+
 
         // Xem tất cả sản phẩm sale
         public ActionResult Sales(int? page)
