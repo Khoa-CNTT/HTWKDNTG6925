@@ -69,7 +69,7 @@ HTWKDNTG6925/
 ## 🛠️ Hướng Dẫn Cài Đặt Dự Án
 
 1. **Clone repository**:
-   ''' bash
+   ```bash
    git clone https://github.com/Khoa-CNTT/HTWKDNTG6925.git
    ```
 2. **Mở bằng Visual Studio 2019+**:
