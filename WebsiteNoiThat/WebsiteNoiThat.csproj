@@ -453,6 +453,7 @@
     <Content Include="Content\admin\css\sb-admin-2.css" />
     <Content Include="Content\admin\css\sb-admin-2.min.css" />
     <Content Include="Content\admin\img\a.jpg" />
+    <Content Include="Content\admin\img\noithat.jpg" />
     <Content Include="Content\admin\img\our-furniture-your-home_v2.jpg" />
     <Content Include="Content\admin\img\undraw_posting_photo.svg" />
     <Content Include="Content\admin\js\demo\chart-area-demo.js" />

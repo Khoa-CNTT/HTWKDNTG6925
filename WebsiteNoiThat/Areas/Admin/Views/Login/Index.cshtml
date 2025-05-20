@@ -1,88 +1,134 @@
-﻿@model  WebsiteNoiThat.Areas.Admin.Models.LoginModel
+﻿@model WebsiteNoiThat.Areas.Admin.Models.LoginModel
+@{
+    ViewBag.Title = "Đăng nhập quản trị";
+    Layout = null;
+}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Đăng nhập | Quản trị</title>
 
-    <!-- Custom fonts for this template-->
-    <link href="~/Content/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Bootstrap + Font -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <!-- Custom styles for this template-->
-    <link href="~/Content/admin/css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('/Content/admin/img/noithat.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Inter', sans-serif;
+        }
 
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-card {
+            background: rgba(45, 45, 45, 0.8); /* Sang trọng */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 420px;
+            color: #fff;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .login-header {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: none;
+        }
+
+            .form-control::placeholder {
+                color: #eee;
+            }
+
+            .form-control:focus {
+                box-shadow: none;
+                border: 1px solid #fff;
+            }
+
+        .btn-primary {
+            background-color: #1e88e5;
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            font-weight: 600;
+        }
+
+            .btn-primary:hover {
+                background-color: #1565c0;
+            }
+
+        .text-link a {
+            display: block;
+            margin-top: 12px;
+            color: #00bcd4;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+
+            .text-link a:hover {
+                text-decoration: underline;
+            }
+
+
+        .text-danger {
+            color: #ffcdd2 !important;
+        }
+    </style>
 </head>
+<body>
+    <div class="overlay">
+        <div class="login-card">
+            <div class="login-header">Đăng nhập quản trị</div>
 
-<body class="bg-gradient-primary">
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-    <div class="container">
-
-        <!-- Outer Row -->
-        <div class="row justify-content-center">
-
-            <div class="col-xl-10 col-lg-12 col-md-9">
-
-                <div class="card o-hidden border-0 shadow-lg my-5">
-                    <div class="card-body p-0">
-                        <!-- Nested Row within Card Body -->
-                        <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-                            <div class="col-lg-6">
-                                <div class="p-5">
-                                    <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Xin chào!</h1>
-                                    </div>
-                                    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
-                                    {
-                                        @Html.AntiForgeryToken()
-                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                                        <fieldset>
-                                            <div class="form-group">
-                                                @Html.TextBoxFor(model => model.Username, new { @class = "form-control form-control-user", @id = "exampleInputEmail", @placeholder = "Tên đăng nhập", @autofocus = "autofocus" })
-                                            </div>
-                                            <div class="form-group">
-                                                @Html.TextBoxFor(model => model.Passwword, new { @class = "form-control form-control-user", @id = "exampleInputPassword", @placeholder = "Mật khẩu", type = "password" })
-                                            </div>
-                                            
-                                            <button type="submit" class="btn btn-primary btn-user btn-block">
-                                                Đăng nhập
-                                            </button>
-                                            <hr>
-                                            
-                                        </fieldset>
-                                    }
-                                    <div class="text-center">
-                                        @*<a class="small" href="#">Quên mật khẩu?</a>*@
-                                        <a class="small" href="/RegisterAndLogin/Login">Đăng nhập khách hàng</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control", @placeholder = "Tên đăng nhập" })
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
                 </div>
 
+                <div class="mb-3">
+                    @Html.PasswordFor(model => model.Passwword, new { @class = "form-control", @placeholder = "Mật khẩu" })
+                    @Html.ValidationMessageFor(model => model.Passwword, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                </div>
+            }
+
+            <div class="text-link">
+                <a href="/RegisterAndLogin/Login">Quay lại đăng nhập khách hàng</a>
             </div>
-
         </div>
-
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="~/Content/admin/vendor/jquery/jquery.min.js"></script>
-    <script src="~/Content/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="~/Content/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="~/Content/admin/js/sb-admin-2.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
