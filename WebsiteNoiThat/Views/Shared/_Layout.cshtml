@@ -152,6 +152,13 @@
             </section>
         </div>
     </div>
+    <button id="toggleChatBot" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; border: none; border-radius: 50%; width: 60px; height: 60px; background: #007bff; color: white; font-size: 24px;">💬</button>
+
+    <!-- Khung chatbot -->
+    <div id="chatbotBox" style="display: none; position: fixed; bottom: 90px; right: 20px; z-index: 9999; width: 350px;">
+        @Html.Partial("~/Views/ChatBot/_ChatBot.cshtml")
+    </div>
+
     <footer id="footerNew">
         <div class="container">
             <div class="row">
@@ -218,11 +225,11 @@
             </div>
         </div>
     </footer>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME"
-                  chat-title="NộiThấtSeven"
-                  agent-id="c89ad7cb-ae1c-45bd-a3ae-a7968c5029e6"
-                  language-code="vi"></df-messenger>
+    @*<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger intent="WELCOME"
+                      chat-title="NộiThấtSeven"
+                      agent-id="c89ad7cb-ae1c-45bd-a3ae-a7968c5029e6"
+                      language-code="vi"></df-messenger>*@
 
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -239,7 +246,11 @@
             $(".top-cart-content").css("display", "none");
         });
     </script>
-
+    <script>
+        $('#toggleChatBot').click(function () {
+            $('#chatbotBox').toggle();
+        });
+    </script>
     <script type="text/javascript">
         $(document).ready(function () {
             var stt = 0;

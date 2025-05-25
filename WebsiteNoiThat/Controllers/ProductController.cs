@@ -7,6 +7,8 @@ using Models;
 using Models.DAO;
 using Models.EF;
 using PagedList;
+using WebsiteNoiThat.Common;
+using WebsiteNoiThat.Models;
 
 namespace WebsiteNoiThat.Controllers
 {
@@ -45,19 +47,61 @@ namespace WebsiteNoiThat.Controllers
             var model = new ProductDao().NewProduct();
             return PartialView(model);
         }
-       
+
         public ActionResult DetailProduct(int Id)
         {
-          var model = new ProductDao().DetailsProduct(Id);
+            var model = new ProductDao().DetailsProduct(Id);
             if (model == null)
             {
                 Response.StatusCode = 404;
                 return null;
             }
+
+            var reviews = (from r in db.Reviews
+                           join u in db.Users on r.UserId equals u.UserId
+                           where r.ProductId == Id
+                           orderby r.CreatedDate descending
+                           select new ReviewViewModel
+                           {
+                               Rating = r.Rating,
+                               Comment = r.Comment,
+                               CreatedDate = r.CreatedDate,
+                               UserName = u.Name
+                           }).ToList();
+
+            ViewBag.Reviews = reviews;
+
             return View(model);
-
         }
+        [HttpPost]
+        public ActionResult AddReview(int ProductId, int Rating, string Comment)
+        {
+            var session = (UserLogin)Session[Commoncontent.user_sesion];
+            if (session == null) return Redirect("/dang-nhap");
 
+            // Check đã mua hàng chưa và trạng thái đã hoàn tất (6)
+            var hasBought = db.Orders
+                .Any(o => o.UserId == session.UserId && o.StatusId == 6 &&
+                          db.OrderDetails.Any(d => d.OrderId == o.OrderId && d.ProductId == ProductId));
+
+            if (!hasBought)
+            {
+                TempData["Error"] = "Bạn chưa mua sản phẩm này hoặc đơn hàng chưa hoàn tất.";
+                return RedirectToAction("DetailProduct", new { id = ProductId });
+            }
+
+            db.Reviews.Add(new Review
+            {
+                ProductId = ProductId,
+                UserId = session.UserId,
+                Rating = Rating,
+                Comment = Comment,
+                CreatedDate = DateTime.Now
+            });
+            db.SaveChanges();
+
+            return RedirectToAction("DetailProduct", new { id = ProductId });
+        }
         //in ra theo danh mục sản phẩm
         public ActionResult CategoryShow(int cateId, int page = 1, int pagesize = 16)
         {
@@ -172,38 +216,24 @@ namespace WebsiteNoiThat.Controllers
         {
             int pagenumber = (page ?? 1);
             int pagesize = 16;
-
             var model = (from a in db.Products
                          join b in db.OrderDetails on a.ProductId equals b.ProductId
-                         group b by new
-                         {
-                             a.ProductId,
-                             a.Name, 
-                             a.Description,
-                             a.Photo,
-                             a.Price,
-                             a.Discount,
-                             a.EndDate,
-                             a.StartDate
-                         } into g
+                         group b by new { a.Description, a.ProductId, a.Photo, a.Price, a.Discount, a.EndDate, a.StartDate }
+                         into g
                          select new ProductView
                          {
-                             ProductId = g.Key.ProductId,
-                             Name = g.Key.Name, 
                              Description = g.Key.Description,
-                             Photo = g.Key.Photo,
+                             ProductId = g.Key.ProductId,
                              Price = g.Key.Price,
                              Discount = g.Key.Discount,
                              StartDate = g.Key.StartDate,
                              EndDate = g.Key.EndDate,
-                             Quantity = g.Sum(s => s.Quantity)
-                         })
-                         .OrderByDescending(n => n.Quantity)
-                         .ToPagedList(pagenumber, pagesize);
+                             Photo = g.Key.Photo,
+                             Quantity = g.Sum(s => s.Quantity),
 
+                         }).OrderByDescending(n => n.Quantity).ToPagedList(pagenumber, pagesize);
             return View(model);
         }
-
 
         // Xem tất cả sản phẩm sale
         public ActionResult Sales(int? page)

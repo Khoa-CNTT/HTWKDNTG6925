@@ -26,6 +26,7 @@
                         @*<th>Giá sau khi giảm bằng thẻ tích điểm)</th>*@
                         <th>Khuyến mãi</th>
                         <th>Thành tiền</th>
+                        <th>Phương thức thanh toán</th>
                         <th>Trạng thái</th>
                         <th>Hủy đơn hàng</th>
                     </tr>
@@ -51,9 +52,10 @@
                                 <td>Không</td>
                             }
                             <td>@string.Format("{0:#,###.##}", (item.Price * item.Quantity))₫</td>
+                            <td>@item.PaymentMethod</td>
                             <td style="color:darkslategray">@item.NameStatus</td>
                             <td>
-                                @if (item.StatusId != 3) 
+                                @if (item.StatusId != 3)
                                 {
                                     <a href="/Cart/DeleteItem?id=@item.OrderDetaiId" data-id="@item.ProductId">Hủy đơn hàng</a>
                                 }

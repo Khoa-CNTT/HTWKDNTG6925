@@ -200,3 +200,78 @@ D:\WebsiteNoiThat\WebsiteNoiThat\Models\obj\Debug\Models.csproj.CoreCompileInput
 D:\WebsiteNoiThat\WebsiteNoiThat\Models\obj\Debug\Models.csproj.Up2Date
 D:\WebsiteNoiThat\WebsiteNoiThat\Models\obj\Debug\Models.dll
 D:\WebsiteNoiThat\WebsiteNoiThat\Models\obj\Debug\Models.pdb
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\Models.dll.config
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\Models.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\Models.pdb
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\EntityFramework.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Buffers.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Memory.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Numerics.Vectors.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\EntityFramework.xml
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Buffers.xml
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Memory.xml
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Numerics.Vectors.xml
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Interop.SCRIPTOSYSLib.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Interop.ScriptSigner.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Models.csproj.ResolveComReference.cache
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Models.csproj.Up2Date
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Models.dll
+D:\Đồ án tốt nghiệp\Lưu Bài\HTWKDNTG6925\Models\obj\Debug\Models.pdb
+E:\job\wedbanhang\Models\bin\Debug\Models.dll.config
+E:\job\wedbanhang\Models\bin\Debug\Models.dll
+E:\job\wedbanhang\Models\bin\Debug\Models.pdb
+E:\job\wedbanhang\Models\bin\Debug\EntityFramework.dll
+E:\job\wedbanhang\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\job\wedbanhang\Models\bin\Debug\System.Buffers.dll
+E:\job\wedbanhang\Models\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\job\wedbanhang\Models\bin\Debug\System.Memory.dll
+E:\job\wedbanhang\Models\bin\Debug\System.Numerics.Vectors.dll
+E:\job\wedbanhang\Models\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\job\wedbanhang\Models\bin\Debug\EntityFramework.xml
+E:\job\wedbanhang\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\job\wedbanhang\Models\bin\Debug\System.Buffers.xml
+E:\job\wedbanhang\Models\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\job\wedbanhang\Models\bin\Debug\System.Memory.xml
+E:\job\wedbanhang\Models\bin\Debug\System.Numerics.Vectors.xml
+E:\job\wedbanhang\Models\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\job\wedbanhang\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+E:\job\wedbanhang\Models\obj\Debug\Interop.SCRIPTOSYSLib.dll
+E:\job\wedbanhang\Models\obj\Debug\Interop.ScriptSigner.dll
+E:\job\wedbanhang\Models\obj\Debug\Models.csproj.ResolveComReference.cache
+E:\job\wedbanhang\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+E:\job\wedbanhang\Models\obj\Debug\Models.csproj.Up2Date
+E:\job\wedbanhang\Models\obj\Debug\Models.dll
+E:\job\wedbanhang\Models\obj\Debug\Models.pdb
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\Models.dll.config
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\Models.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\Models.pdb
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\EntityFramework.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Buffers.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Memory.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Numerics.Vectors.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\EntityFramework.xml
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Buffers.xml
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Memory.xml
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Numerics.Vectors.xml
+D:\WebsiteNoiThat\wedbanhang\Models\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Interop.SCRIPTOSYSLib.dll
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Interop.ScriptSigner.dll
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Models.csproj.ResolveComReference.cache
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Models.csproj.Up2Date
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Models.dll
+D:\WebsiteNoiThat\wedbanhang\Models\obj\Debug\Models.pdb

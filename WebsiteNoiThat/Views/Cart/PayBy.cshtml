@@ -86,14 +86,38 @@
                                 @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2">Phương thức thanh toán</label>
+                            <div class="col-md-10" style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+                                <label class="radio-inline" style="display: flex; align-items: center; gap: 8px;">
+                                    <input type="radio" name="PaymentMethod" value="COD" required />
+                                    <img src="https://cdn-icons-png.freepik.com/512/6491/6491623.png" alt="COD" style="height: 30px;" />
+                                    <span>COD</span>
+                                </label>
+
+                                <label class="radio-inline" style="display: flex; align-items: center; gap: 8px;">
+                                    <input type="radio" name="PaymentMethod" value="Momo" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png" alt="Momo" style="height: 30px;" />
+                                    <span>Momo</span>
+                                </label>
+
+                                <label class="radio-inline" style="display: flex; align-items: center; gap: 8px;">
+                                    <input type="radio" name="PaymentMethod" value="VNPAY" />
+                                    <img src="https://vinadesign.vn/uploads/images/2023/05/vnpay-logo-vinadesign-25-12-57-55.jpg" alt="VNPAY" style="height: 30px;" />
+                                    <span>VNPAY</span>
+                                </label>
+                            </div>
+                        </div>
+
+
                         @*<div class="form-group">
 
-                                <div class="col-md-10">
-                                    @Html.CheckBoxFor(model => model.Status, new { htmlAttributes = new { @class = "form-control", @required = "" } })
-                                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
-                                    Tôi đồng ý thông tin trên
-                                </div>
-                            </div>*@
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Status, new { htmlAttributes = new { @class = "form-control", @required = "" } })
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                Tôi đồng ý thông tin trên
+            </div>
+        </div>*@
                         @*<input type="checkbox" name="ischeck" id="check" value="true" />Sử dụng thẻ tích điểm*@
                     </div>
                     @*<button onclick="href='/gio-hang'" class="btn btn-secondary">Tiếp tục mua hàng</button>*@

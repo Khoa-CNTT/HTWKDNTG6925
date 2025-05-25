@@ -48,5 +48,10 @@
         [DisplayName("Trạng thái đơn hàng")]
         [Required(ErrorMessage = "Trạng thái đơn hàng không được để trống.")]
         public int StatusId { get; set; }
+
+        [DisplayName("Phương thức thanh toán")]
+        [StringLength(50, ErrorMessage = "Phương thức thanh toán không được vượt quá 50 ký tự.")]
+        [Required(ErrorMessage = "Phương thức thanh toán không được để trống.")]
+        public string PaymentMethod { get; set; }
     }
 }

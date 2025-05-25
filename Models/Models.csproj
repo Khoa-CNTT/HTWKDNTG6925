@@ -93,6 +93,7 @@
     <Compile Include="EF\OrderDetail.cs" />
     <Compile Include="EF\Product.cs" />
     <Compile Include="EF\Provider.cs" />
+    <Compile Include="EF\Review.cs" />
     <Compile Include="EF\Role.cs" />
     <Compile Include="EF\Status.cs" />
     <Compile Include="EF\User.cs" />

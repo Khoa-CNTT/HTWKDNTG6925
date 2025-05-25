@@ -1,0 +1,57 @@
+﻿@model List<WebsiteNoiThat.Models.CartItem>
+@{
+    ViewBag.Title = "Thanh toán thành công";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content">
+    <div class="section group">
+        @if (Model != null && Model.Count > 0)
+        {
+            <h3 class="text-center">Chi tiết đơn hàng</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Mã SP</td>
+                        <td>Tên SP</td>
+                        <td>Ảnh SP</td>
+                        <td>Số lượng</td>
+                        <td>Đơn giá</td>
+                        <td>Thành tiền</td>
+                        <td>Phương thức thanh toán</td>
+                        <td>Trạng thái</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        var discountPrice = item.Product.Price - (item.Product.Price * item.Product.Discount * 0.01);
+                        var totalItem = discountPrice * item.Quantity;
+                        <tr>
+                            <td>@item.Product.ProductId</td>
+                            <td>@item.Product.Name</td>
+                            <td>
+                                <img src="@Url.Content("~/image/" + item.Product.Photo)" width="100" />
+                            </td>
+                            <td>@item.Quantity</td>
+                            <td>@item.Product.Price.GetValueOrDefault(0).ToString("N0") ₫</td>
+                            <td>@totalItem.GetValueOrDefault(0).ToString("N0") ₫</td>
+                            <td>@ViewBag.PaymentMethod</td>
+                            <td style="color:aqua">@ViewBag.Status</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="alert alert-warning text-center">
+                Không có sản phẩm nào được tìm thấy.
+            </div>
+        }
+    </div>
+
+    <div class="alert alert-success text-center mt-4">
+        <strong>🎉 Bạn vừa đặt hàng thành công qua @ViewBag.PaymentMethod!</strong><br />
+        Cảm ơn bạn đã mua sắm tại Nội Thất Seven.
+    </div>
+</div>

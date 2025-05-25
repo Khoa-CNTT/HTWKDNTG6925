@@ -18,6 +18,7 @@ namespace WebsiteNoiThat.Models
         public int? Quantity { get; set; }
         public int? StatusId { get; set; }
         public string NameStatus { get; set; }
+        public string PaymentMethod { get; set; }
         public string Photo { get; set; }
         public DateTime? EndDate { get; set; }
         public int? Discount { get; set; }

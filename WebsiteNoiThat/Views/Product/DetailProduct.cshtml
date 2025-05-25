@@ -9,6 +9,27 @@
         .zoom:hover {
             transform: scale(1.1);
         }
+
+    #star-rating {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+        font-size: 1.8em;
+    }
+
+        #star-rating input[type="radio"] {
+            display: none;
+        }
+
+        #star-rating label {
+            color: #ccc;
+            cursor: pointer;
+        }
+
+            #star-rating input[type="radio"]:checked ~ label,
+            #star-rating label:hover,
+            #star-rating label:hover ~ label {
+                color: gold;
+            }
 </style>
 @section Noidungbenphai{
     <table class="chitietsp">
@@ -106,18 +127,18 @@
 
     <div class="short-des col-sm-12 col-xs-12">
         <ul class="nav nav-tabs" style="font-size:17px">
-            <li class="nav active"><a href="#produc-des" data-toggle="tab"> Mô tả sản phẩm</a></li>
+            <li class="nav"><a href="#produc-des" data-toggle="tab"> Mô tả sản phẩm</a></li>
             <li class="nav"><a href="#tab-gh" data-toggle="tab"> Giao hàng </a></li>
             <li class="nav"><a href="#tab-th" data-toggle="tab"> Trả hàng </a></li>
             <li class="nav"><a href="#tab-bh" data-toggle="tab"> Bảo hành </a></li>
+            <li class="nav active"><a href="#tab-dg" data-toggle="tab"> Đánh giá </a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content" style="margin-top:15px; margin-bottom:10px">
-            <div class="tab-pane fade in active" id="produc-des" style="white-space: pre-line; font-size:16px; line-height:1.8;">
-                @Model.Description
+            <div class="tab-pane fade" id="produc-des">
+                <h2>@Model.Description</h2>
             </div>
-
             <div class="tab-pane fade" id="tab-gh">
                 <div align="justify">
                     <p>
@@ -230,6 +251,69 @@
                 <p>
                     2. Sản phẩm chỉ được bảo hành tại nhà máy. Chúng tôi sẽ thu xếp hẹn ngày nhận sản phẩm để bảo hành trong vòng 7 ngày. Chúng tôi không chịu chi phí vận chuyển nhận và đổi sản phẩm bảo hành. Chi phí vận chuyển tính theo chính sách tính phí vận chuyển giao hàng tiêu chuẩn.
                 </p>
+            </div>
+            <div class="tab-pane fade in active" id="tab-dg">
+                <h4 class="mb-4">Đánh giá sản phẩm</h4>
+                @{
+                    var reviews = ViewBag.Reviews as List<WebsiteNoiThat.Models.ReviewViewModel>;
+                }
+                @if (reviews != null && reviews.Count > 0)
+                {
+                    foreach (var r in reviews)
+                    {
+                        <div class="card mb-3 border shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <strong>@r.UserName</strong>
+                                    <span class="text-muted">@r.CreatedDate.ToString("dd/MM/yyyy")</span>
+                                </div>
+                                <div class="mb-2">
+                                    <span style="color:gold;">
+                                        @for (int i = 0; i < r.Rating; i++)
+                                        {<text>★</text>}
+                                        @for (int i = r.Rating; i < 5; i++)
+                                        {<text>☆</text>}
+                                    </span>
+                                    <span class="ml-2 text-muted">(@r.Rating / 5)</span>
+                                </div>
+                                <p>@r.Comment</p>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>Chưa có đánh giá nào cho sản phẩm này.</p>
+                }
+
+                <hr />
+                @if (TempData["Error"] != null)
+                {
+                    <div class="alert alert-danger">@TempData["Error"]</div>
+                }
+
+                <h5 class="mt-4">Viết đánh giá của bạn</h5>
+                @using (Html.BeginForm("AddReview", "Product", FormMethod.Post))
+                {
+                    @Html.Hidden("ProductId", Model.ProductId)
+
+                    <div class="form-group">
+                        <label>Đánh giá (từ 1 đến 5 sao)</label>
+                        <div id="star-rating" class="mb-2">
+                            @for (int i = 5; i >= 1; i--)
+                            {
+                                <input type="radio" id="star@i" name="Rating" value="@i" />
+                                <label for="star@i" title="@i sao">★</label>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bình luận</label>
+                        <textarea name="Comment" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi đánh giá</button>
+                }
             </div>
 
         </div>

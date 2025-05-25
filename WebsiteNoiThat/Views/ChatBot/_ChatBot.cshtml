@@ -1,0 +1,98 @@
+﻿@{
+    Layout = null;
+}
+<div id="chat-container" style="
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 750px;
+    width: 100%;
+    margin: 20px auto;
+    font-family: 'Segoe UI', sans-serif;
+">
+    <h4 style="text-align: center;">💬 ChatBot Gợi ý sản phẩm</h4>
+
+    <div id="chat-box" style="
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 12px;
+        background: #f1f1f1;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    "></div>
+
+    <div style="display: flex; gap: 10px;">
+        <input type="text" id="user-input" class="form-control" placeholder="Tôi muốn mua bàn màu trắng..."
+               style="flex: 1; height: 40px;" />
+        <button class="btn btn-primary" onclick="sendMessage()" style="padding: 0 20px;">Gửi</button>
+    </div>
+</div>
+<script>
+    function sendMessage() {
+        const message = $('#user-input').val().trim();
+        if (!message) return;
+
+        $('#chat-box').append(`<div style="text-align: right; color: #007bff; font-weight: bold; margin: 10px 0;">${message}</div>`);
+        $('#user-input').val('');
+        $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+
+        $.post('/ChatBot/SendMessage', { message: message }, function (res) {
+            try {
+                let parsed = JSON.parse(res.reply);
+
+                // Nếu là mảng danh sách sản phẩm
+                if (Array.isArray(parsed)) {
+                    const $msg = $('<div style="text-align: left; margin: 10px 0;"></div>');
+
+                    parsed.forEach(p => {
+                        const imageUrl = "/image/" + (p.image || "placeholder.jpg");
+                        const html = `
+                            <div style="
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border: 1px solid #ccc;
+                                border-radius: 10px;
+                                padding: 10px;
+                                background: #fff;
+                                margin-bottom: 10px;
+                                width: 100%;
+                                gap: 12px;
+                            ">
+                                <img src="${imageUrl}" alt="${p.name}" style="width: 90px; height: 90px; object-fit: cover; border-radius: 8px;" />
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 600; font-size: 15px;">${p.name}</div>
+                                    <div style="color: #28a745; font-size: 14px; margin-top: 4px;">${p.price} ₫</div>
+                                    <a href="/Product/DetailProduct/${p.id}" target="_blank" style="
+                                        display: inline-block;
+                                        margin-top: 5px;
+                                        background-color: #007bff;
+                                        color: white;
+                                        padding: 5px 10px;
+                                        font-size: 13px;
+                                        border-radius: 6px;
+                                        text-decoration: none;
+                                    ">Xem chi tiết</a>
+                                </div>
+                            </div>`;
+                        $msg.append(html);
+                    });
+
+                    $('#chat-box').append($msg);
+                } else {
+                    // Không phải JSON sản phẩm, hiển thị như đoạn văn trả lời bình thường
+                    $('#chat-box').append(`<div style="text-align: left; margin: 10px 0; color: #333;">${res.reply}</div>`);
+                }
+            } catch {
+                // Nếu JSON.parse thất bại, cũng là đoạn văn bình thường
+                $('#chat-box').append(`<div style="text-align: left; margin: 10px 0; color: #333;">${res.reply}</div>`);
+            }
+
+            $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+        });
+    }
+</script>
+
