@@ -5,42 +5,126 @@
     <span>Sản phẩm hot</span>
 </div>
 <style>
-    .img-label {
+    .boxspl1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+        position: relative;
+        width: 200px; /* Cố định chiều ngang để căn giữa các box */
+    }
+
+        .boxspl1 .img-wrapper {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center; /* căn ngang giữa */
+            align-items: center; /* căn dọc giữa */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+
+        .boxspl1 img.product-photo {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* giữ tỉ lệ, không cắt hình */
+            border-radius: 6px;
+        }
+
+    /* Giữ nguyên vị trí label Sale và Hot */
+    .img-label, .img-sale {
         width: 40px;
         height: 45px;
         position: absolute;
-        right: 27px;
+        top: 0;
+        z-index: 2;
     }
+
+    .img-label {
+        right: 0;
+    }
+
+    .img-sale {
+        left: 0;
+    }
+
+    /* Tiêu đề sản phẩm */
+    .tit-boxspl a {
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 180px;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    /* Giá tiền */
+    .price-boxspl {
+        font-size: 13px;
+        color: #e74c3c;
+        margin-top: 4px;
+    }
+
+        .price-boxspl strike {
+            font-size: 12px;
+            color: dimgray;
+        }
+
+    /* Hiệu ứng blink */
+    blink {
+        font-weight: bold;
+        color: #e74c3c;
+    }
+
 </style>
-@foreach (var sp in Model.Where(x => x.IsVisible))
+@foreach (var sp in Model.Where(x => x.IsVisible).Take(7))
 {
-<div class="ctboxleft">
     <div class="boxspl1">
-        <div>
+        <div class="img-wrapper">
+            @*@if (sp.Discount > 0 && sp.EndDate > DateTime.Now)
+            {
+                <div class="img-sale">
+                    <img src="~/image/sale.png" alt="Sale" />
+                </div>
+            }*@
+
             <div class="img-label">
-                <img src="~/image/hot.png">
+                <img src="~/image/hot.png" alt="Hot" />
             </div>
-            <a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })" data-toggle="tooltip" title="@sp.Name">
-                <img width="200px" src="@Url.Content("~/image/" + sp.Photo)" alt="">
+
+            <a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })" title="@sp.Name">
+                <img class="product-photo" src="@Url.Content("~/image/" + sp.Photo)" alt="@sp.Name" />
             </a>
         </div>
-        <div>
-            <div class="tit-boxspl">
-                <a href="@Url.Action("DetailProduct", new { @Id= sp.ProductId })">@sp.Description</a>
-            </div>
-            @if (sp.Discount != 0 && sp.EndDate > DateTime.Now)
-            {
-                <div class="price-boxspl">@sp.Price.GetValueOrDefault(0).ToString("N0")</div>
-            }
-            else
-            {
-                <div class="price-boxspl">
-                    <strike><i style="color:dimgray"> @sp.Price.GetValueOrDefault(0).ToString("N0") </i></strike>
-                    <blink>@string.Format("{0:#,###.##}", (sp.Price - (sp.Price * sp.Discount * 0.01)))₫</blink>
-                </div>
-            }
+
+        <div class="tit-boxspl">
+            <a href="@Url.Action("DetailProduct", new { @Id = sp.ProductId })" title="@sp.Description">
+                @sp.Description
+            </a>
         </div>
+
+        @if (sp.Discount != 0 && sp.EndDate > DateTime.Now)
+        {
+            <div class="price-boxspl">
+                <strike>@sp.Price.GetValueOrDefault(0).ToString("N0") ₫</strike>
+                <blink>@string.Format("{0:#,###.##}", (sp.Price - (sp.Price * sp.Discount * 0.01)))₫</blink>
+            </div>
+        }
+        else
+        {
+            <div class="price-boxspl">@sp.Price.GetValueOrDefault(0).ToString("N0") ₫</div>
+        }
     </div>
-</div>
+
 }
 

@@ -28,7 +28,17 @@ namespace Models.DAO
         {
             var model = (from a in db.Products
                          join b in db.OrderDetails on a.ProductId equals b.ProductId
-                         group b by new { a.Description, a.ProductId, a.Photo, a.Price, a.Discount, a.EndDate, a.StartDate }
+                         group b by new
+                         {
+                             a.Description,
+                             a.ProductId,
+                             a.Photo,
+                             a.Price,
+                             a.Discount,
+                             a.EndDate,
+                             a.StartDate,
+                             a.IsVisible
+                         }
                          into g
                          select new ProductView
                          {
@@ -39,12 +49,17 @@ namespace Models.DAO
                              StartDate = g.Key.StartDate,
                              EndDate = g.Key.EndDate,
                              Photo = g.Key.Photo,
-
                              Quantity = g.Sum(s => s.Quantity),
+                             IsVisible = g.Key.IsVisible // <-- Thêm dòng này nếu ProductView có
+                         })
+                         .Where(x => x.IsVisible == true) // hoặc lọc trong View
+                         .OrderByDescending(n => n.Quantity)
+                         .Take(6)
+                         .ToList();
 
-                         }).OrderByDescending(n => n.Quantity).Take(6).ToList();
             return model;
         }
+
 
         public List<Product> SaleProduct()
         {
