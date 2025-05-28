@@ -25,6 +25,9 @@
             <span style="font-weight:normal">@Html.DisplayNameFor(model => model.ShipAddress)</span>: @Html.DisplayFor(model => model.ShipAddress)
         </dt>
         <dt>
+            <span style="font-weight:normal">@Html.DisplayNameFor(model => model.PaymentMethod)</span>: @Html.DisplayFor(model => model.PaymentMethod)
+        </dt>
+        <dt>
             <span style="font-weight:normal">@Html.DisplayNameFor(model => model.UpdateDate)</span>: @Html.DisplayFor(model => model.UpdateDate)
         </dt>
         <dt>
@@ -33,42 +36,42 @@
     </dl>
     <hr />
 
-    <div >
-    <h4>Danh sách sản phẩm</h4>
-    <table class="table" style="text-align:center">
-        <thead>
-            <tr>
-                <th scope="col">Mã sản phẩm</th>
-                <th scope="col">Tên sản phẩm</th>
-                <th scope="col">Số lượng</th>
-                <th scope="col">Kích thước (Dài x Rộng x Cao)</th>
-                <th scope="col">Giá (đã KM nếu có)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                @foreach (OrderProduct p in (List<OrderProduct>)ViewBag.orderproducts)
-                {
+    <div>
+        <h4>Danh sách sản phẩm</h4>
+        <table class="table" style="text-align:center">
+            <thead>
                 <tr>
-                    <td scope="row">@p.ProductId</td>
-                    <td>@p.ProductName</td>
-                    <td>@p.Quantity</td>
-                    <td>
-                        @{
-                            string lengthStr = (p.Length % 1 == 0) ? $"{(int)p.Length}m" : $"{p.Length:0.##}m";
-                            string widthStr = (p.Width % 1 == 0) ? $"{(int)p.Width}m" : $"{p.Width:0.##}m";
-                            string heightStr = (p.Height % 1 == 0) ? $"{(int)p.Height}m" : $"{p.Height:0.##}m";
-                        }
-                        @($"{lengthStr} x {widthStr} x {heightStr}")
-                    </td>
-                    <td>@string.Format("{0:N0}đ", p.Price)</td>
+                    <th scope="col">Mã sản phẩm</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Kích thước (Dài x Rộng x Cao)</th>
+                    <th scope="col">Giá (đã KM nếu có)</th>
                 </tr>
-            }
+            </thead>
+            <tbody>
                 <tr>
-            </tbody>
-        </table>
-        <a>Tổng tiền thanh toán:<span style="font-weight:bold; color:crimson;">    @ViewBag.total.ToString("N0") ₫</span></a>
-    </div>
+                    @foreach (OrderProduct p in (List<OrderProduct>)ViewBag.orderproducts)
+                    {
+                    <tr>
+                        <td scope="row">@p.ProductId</td>
+                        <td>@p.ProductName</td>
+                        <td>@p.Quantity</td>
+                        <td>
+                            @{
+                                string lengthStr = (p.Length % 1 == 0) ? $"{(int)p.Length}m" : $"{p.Length:0.##}m";
+                                string widthStr = (p.Width % 1 == 0) ? $"{(int)p.Width}m" : $"{p.Width:0.##}m";
+                                string heightStr = (p.Height % 1 == 0) ? $"{(int)p.Height}m" : $"{p.Height:0.##}m";
+                            }
+                            @($"{lengthStr} x {widthStr} x {heightStr}")
+                        </td>
+                        <td>@string.Format("{0:N0}đ", p.Price)</td>
+                    </tr>
+                }
+                    <tr>
+                </tbody>
+            </table>
+            <a>Tổng tiền thanh toán:<span style="font-weight:bold; color:crimson;">    @ViewBag.total.ToString("N0") ₫</span></a>
+        </div>
     </div>
     <br />
     <button class="btn btn-outline-secondary">@Html.ActionLink("Trở về", "Show")</button>
